@@ -251,7 +251,28 @@ body.drawer-open .drawer-backdrop { opacity: 1; pointer-events: auto; }
   padding: 12px 12px 28px;
 }
 body.drawer-open .site-drawer { transform: translateX(0); }
-.drawer-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.drawer-bar { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+.drawer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 800;
+}
+.drawer-brand img {
+  width: 36px;
+  height: 36px;
+  flex: none;
+  border-radius: 10px;
+  background: #1c1917;
+  display: block;
+}
+.drawer-search::placeholder {
+  color: var(--ink);
+  opacity: 0.72;
+}
 .drawer-bar button, .drawer-search {
   min-height: 40px;
   border-radius: 10px;
@@ -283,11 +304,11 @@ body.drawer-open .site-drawer { transform: translateX(0); }
   display: grid;
   place-items: center;
   border-radius: 10px;
-  background: linear-gradient(145deg, #fff, #67e8f9);
+  background: linear-gradient(145deg, #22d3ee, #818cf8 70%, #f472b6);
   color: #082f49;
   box-shadow: var(--uc-glow);
 }
-.drawer-list .ico svg { width: 20px; height: 20px; }
+.drawer-list .ico svg { width: 22px; height: 22px; stroke: #082f49; stroke-width: 2.2; }
 .drawer-list strong { display: block; }
 .drawer-list span.desc { display: block; color: var(--ink-dim); font-size: 0.85rem; }
 
@@ -623,7 +644,20 @@ html[data-theme="aurora"] .go-deeper { background: #042f2e; color: #ecfeff; bord
   border: 2px solid #fff;
 }
 .bot-form { display: flex; gap: 6px; position: sticky; bottom: 0; background: #fff; padding-top: 6px; z-index: 2; }
-.bot-form input { flex: 1; min-width: 0; }
+.bot-form input {
+  flex: 1;
+  min-width: 7.5rem;
+  color: #1b1340;
+  caret-color: #1b1340;
+  -webkit-text-fill-color: #1b1340;
+  background-color: #ffffff;
+}
+.bot-form input::placeholder {
+  color: #5b21b6;
+  -webkit-text-fill-color: #5b21b6;
+  opacity: 1;
+  font-weight: 700;
+}
 .greet-modal {
   position: fixed;
   inset: 0;
@@ -698,8 +732,9 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
     bottom: calc(72px + env(safe-area-inset-bottom));
     width: 48px;
     height: 48px;
-    z-index: 64;
+    z-index: 95;
   }
+  .phone-bar { z-index: 96; }
   .bot-dock:not(.is-open) .monkey-btn,
   .bot-dock.is-parked:not(.is-open) .monkey-btn {
     width: 48px;

@@ -103,7 +103,11 @@ html[data-theme="aurora"] .tour-kicker { color: #c4b5fd; }
 }
 html[data-theme="aurora"] .tour-card button:focus-visible { outline-color: #fde047; }
 @media (max-width: 800px) {
-  .tour-card { width: min(440px, calc(100vw - 24px)); }
+  .tour-card {
+    width: min(440px, calc(100vw - 24px));
+    z-index: 93;
+  }
+  .phone-bar, .bot-dock:not(.is-open) { pointer-events: auto; }
 }
 .bot-dock[hidden] { display: none !important; }
 .sr {

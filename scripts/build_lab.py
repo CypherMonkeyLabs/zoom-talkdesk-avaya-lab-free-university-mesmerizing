@@ -184,7 +184,7 @@ def chrome_open(title, desc, depth, current):
 </div>
 <div class="drawer-backdrop"></div>
 <nav id="site-drawer" class="site-drawer" aria-hidden="true" aria-label="Menu">
-<div class="drawer-bar"><strong>Menu</strong><button type="button" data-menu-open>Close</button></div>
+<div class="drawer-bar"><a class="drawer-brand" href="{p}index.html"><img src="{p}favicon.svg" width="36" height="36" alt=""> <strong>ZTA Lab</strong></a><button type="button" data-menu-open>Close</button></div>
 <input class="drawer-search" data-drawer-filter type="search" placeholder="Filter" aria-label="Filter the menu">
 <ul class="drawer-list">{''.join(drawer)}</ul>
 </nav>
@@ -425,7 +425,7 @@ def build_hubs():
     body = f'''<section class="wrap hero-band">
 <div>
 <p class="kicker">Zoom · Talkdesk · Avaya</p>
-<h1>Phone, contact center, and the pages that opened.</h1>
+<h1>Zoom, Talkdesk, and Avaya study notes.</h1>
 <p class="lede">A free study lab for Zoom Phone, Zoom Contact Center, and Zoom Workplace, Talkdesk, and Avaya Aura, Avaya Infinity, and the public names that redirected or did not open. Architecture, SIP and media, call flows, routing, WFM, recording, E911, analytics, CRM, AI agents, migration, licensing, and timelines. A number that was not on an opened page is marked confirm. Emergency and recording notes are not legal advice.</p>
 <div class="actions">
 <a class="btn" href="start.html">Start here</a>

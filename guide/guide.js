@@ -146,6 +146,10 @@
   });
   monkey.addEventListener("click", function () {
     if (suppressClick) { suppressClick = false; return; }
+    if (isPhone() && tour && !tour.hidden) {
+      endTour(true);
+      return;
+    }
     openPanel(panel.hidden);
   });
 
@@ -501,8 +505,20 @@
   var stepText = tour.querySelector("[data-step]");
   var kicker = tour.querySelector("[data-kicker]");
   var dots = tour.querySelector(".tour-dots");
+  function realTrackCount() {
+    var seen = {};
+    var nodes = document.querySelectorAll("a[href]");
+    for (var i = 0; i < nodes.length; i++) {
+      var href = nodes[i].getAttribute("href") || "";
+      var match = href.match(/(?:^|\/)tracks\/(T\d+)\.html(?:$|[?#])/);
+      if (match) seen[match[1]] = true;
+    }
+    var total = Object.keys(seen).length;
+    return total || null;
+  }
+  var trackTotal = realTrackCount();
   var steps = [
-    { sel: "[data-tour='home']", n: "1 of 6", text: "Home is the front door. The eleven tracks sit under this banner." },
+    { sel: "[data-tour='home']", n: "1 of 6", text: "Home is the front door. The " + (trackTotal || "study") + " tracks sit under this banner." },
     { sel: "[data-tour='menu']", n: "2 of 6", text: "Menu is at the top left. The drawer slides in. Esc or a tap outside closes it." },
     { sel: "[data-tour='learn']", n: "3 of 6", text: "Learn is the short path: ten minutes, or the full course." },
     { sel: "[data-tour='diagrams']", n: "4 of 6", text: "Diagrams are the still drawings. Flows are the ladders that move." },
@@ -575,11 +591,21 @@
     tour.querySelector("[data-next]").textContent = stepAt === steps.length - 1 ? "Done" : "Next";
     var header = band(".uc-top");
     var phone = band(".phone-bar");
+    var mascot = band(".bot-dock:not(.is-open) .monkey-btn");
     var banner = band(".canon-banner");
     var gap = 12;
     var cardH = card.offsetHeight;
     var roomTop = Math.max(header ? header.bottom : 8, banner ? banner.bottom : 0) + gap;
-    var roomBottom = (phone ? phone.top : window.innerHeight) - gap;
+    var roomBottom = window.innerHeight - gap;
+    if (phone && phone.top - gap < roomBottom) roomBottom = phone.top - gap;
+    if (isPhone() && mascot && mascot.left > 80) {
+      var side = 12;
+      var rightLimit = Math.round(mascot.left - gap);
+      card.style.width = Math.max(180, rightLimit - side) + "px";
+      card.style.left = side + "px";
+      card.style.right = "auto";
+      card.style.transform = "none";
+    }
     var hero = document.querySelector("main h1");
     var heroBox = hero ? hero.getBoundingClientRect() : null;
     function hitsHero(candidate) {
@@ -590,11 +616,12 @@
     var firstLines = document.querySelector("main .lede, main .kicker + h1 + p, main h1 + p");
     var guardBox = firstLines ? firstLines.getBoundingClientRect() : heroBox;
     var guardBottom = guardBox && guardBox.height > 8 ? guardBox.bottom : (heroBox ? heroBox.bottom : roomTop);
+    var floor = 8;
     if (isPhone()) {
-      var floor = Math.max(roomTop, Math.round(guardBottom + gap));
-      card.style.maxHeight = Math.max(120, roomBottom - floor) + "px";
+      floor = Math.max(roomTop, Math.round(guardBottom + gap));
+      card.style.maxHeight = Math.max(96, roomBottom - floor) + "px";
       cardH = card.offsetHeight;
-      top = Math.max(floor, roomBottom - cardH);
+      top = roomBottom - cardH;
       if (top < floor) top = floor;
     } else if (hitsHero(top)) {
       var belowHero = heroBox.bottom + gap;
@@ -602,16 +629,18 @@
       if (belowHero >= roomTop && belowHero + cardH <= roomBottom) top = belowHero;
       else if (aboveHero >= roomTop) top = aboveHero;
     }
-    if (!isPhone() && top + cardH > roomBottom) top = roomBottom - cardH;
-    if (top < 8) top = 8;
-    if (top + cardH > window.innerHeight - 8) {
-      card.style.maxHeight = Math.max(120, window.innerHeight - 16 - top) + "px";
+    if (top + cardH > roomBottom) {
+      card.style.maxHeight = Math.max(72, roomBottom - Math.max(floor, roomTop)) + "px";
       cardH = card.offsetHeight;
-      if (top + cardH > window.innerHeight - 8) top = Math.max(8, window.innerHeight - 8 - cardH);
+      top = roomBottom - cardH;
     }
-    card.style.left = "50%";
-    card.style.right = "auto";
-    card.style.transform = "translateX(-50%)";
+    if (top < floor && floor + cardH <= roomBottom) top = floor;
+    if (top < 8) top = 8;
+    if (!isPhone() || !(mascot && mascot.left > 80)) {
+      card.style.left = "50%";
+      card.style.right = "auto";
+      card.style.transform = "translateX(-50%)";
+    }
     card.style.top = Math.round(top) + "px";
   }
   function showTour() {
@@ -637,6 +666,14 @@
     placeTour();
   });
   tour.querySelector("[data-skip]").addEventListener("click", function () { endTour(true); });
+  tour.addEventListener("click", function (event) {
+    if (!isPhone() || tour.hidden) return;
+    var box = monkey.getBoundingClientRect();
+    var hit = event.clientX >= box.left && event.clientX <= box.right && event.clientY >= box.top && event.clientY <= box.bottom;
+    if (!hit) return;
+    event.preventDefault();
+    endTour(true);
+  });
   window.addEventListener("resize", function () { if (!tour.hidden) placeTour(); });
   document.querySelectorAll("[data-tour-open]").forEach(function (btn) {
     btn.addEventListener("click", function () { showTour(); });
