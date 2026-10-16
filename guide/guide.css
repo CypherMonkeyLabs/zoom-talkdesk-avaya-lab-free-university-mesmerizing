@@ -49,7 +49,9 @@ html[data-theme="aurora"] .tour-card {
   color: #5b21b6;
 }
 html[data-theme="aurora"] .tour-kicker { color: #c4b5fd; }
+.tour-lead { min-width: 0; }
 .tour-card p { margin: 0 0 12px; line-height: 1.45; }
+.tour-actions { display: block; }
 .tour-dots {
   display: flex;
   gap: 8px;
@@ -104,8 +106,44 @@ html[data-theme="aurora"] .tour-kicker { color: #c4b5fd; }
 html[data-theme="aurora"] .tour-card button:focus-visible { outline-color: #fde047; }
 @media (max-width: 800px) {
   .tour-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
     width: min(440px, calc(100vw - 24px));
+    max-height: none;
+    overflow: hidden;
+    padding: 8px 10px;
     z-index: 93;
+  }
+  .tour-lead { display: block; flex: none; }
+  .tour-card.is-capped .tour-lead { flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  .tour-kicker,
+  .tour-card .tour-lead p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+  .tour-kicker { margin-bottom: 2px; }
+  .tour-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    flex: none;
+  }
+  .tour-dots { margin: 0; gap: 4px; flex: none; }
+  .tour-card .tour-dot {
+    width: 22px;
+    height: 22px;
+    min-height: 22px;
+    font-size: 0.68rem;
+  }
+  .tour-card .row { flex-wrap: nowrap; gap: 4px; margin: 0; }
+  .tour-card .row button {
+    min-height: 32px;
+    padding: 0 8px;
+    font-size: 0.75rem;
   }
   .phone-bar, .bot-dock:not(.is-open) { pointer-events: auto; }
 }

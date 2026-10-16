@@ -499,7 +499,7 @@
   var tour = document.createElement("div");
   tour.hidden = true;
   tour.className = "tour-layer";
-  tour.innerHTML = '<div class="tour-hole" data-hole></div><div class="tour-card" role="dialog" aria-modal="false" aria-label="First visit tour"><p class="tour-kicker" data-kicker></p><p data-step></p><div class="tour-dots" role="group" aria-label="Steps 1 to 6"></div><div class="row"><button type="button" data-back>Back</button><button type="button" data-next>Next</button><button type="button" data-skip>Skip</button></div></div>';
+  tour.innerHTML = '<div class="tour-hole" data-hole></div><div class="tour-card" role="dialog" aria-modal="false" aria-label="First visit tour"><div class="tour-lead"><p class="tour-kicker" data-kicker></p><p data-step></p></div><div class="tour-actions"><div class="tour-dots" role="group" aria-label="Steps 1 to 6"></div><div class="row"><button type="button" data-back>Back</button><button type="button" data-next>Next</button><button type="button" data-skip>Skip</button></div></div></div>';
   document.body.appendChild(tour);
   var hole = tour.querySelector("[data-hole]");
   var stepText = tour.querySelector("[data-step]");
@@ -517,13 +517,14 @@
     return total || null;
   }
   var trackTotal = realTrackCount();
+  var trackLabel = trackTotal || "these";
   var steps = [
-    { sel: "[data-tour='home']", n: "1 of 6", text: "Home is the front door. The " + (trackTotal || "study") + " tracks sit under this banner." },
-    { sel: "[data-tour='menu']", n: "2 of 6", text: "Menu is at the top left. The drawer slides in. Esc or a tap outside closes it." },
-    { sel: "[data-tour='learn']", n: "3 of 6", text: "Learn is the short path: ten minutes, or the full course." },
-    { sel: "[data-tour='diagrams']", n: "4 of 6", text: "Diagrams are the still drawings. Flows are the ladders that move." },
-    { sel: "[data-tour='play']", n: "5 of 6", text: "Play drills codes. Listen, on the phone bar and in the guide, reads the page aloud." },
-    { sel: "[data-tour='downloads']", n: "6 of 6", text: "Downloads holds the sheets, cards, and the zip. Every room also has its own export buttons. The monkey can point at the file for this section." }
+    { sel: "[data-tour='home']", n: "1 of 6", text: "Home. The " + trackLabel + " tracks sit under this banner." },
+    { sel: "[data-tour='menu']", n: "2 of 6", text: "Menu opens the drawer. Esc closes it." },
+    { sel: "[data-tour='learn']", n: "3 of 6", text: "Learn is ten minutes, or the full course." },
+    { sel: "[data-tour='diagrams']", n: "4 of 6", text: "Diagrams are still. Flows are the ladders." },
+    { sel: "[data-tour='play']", n: "5 of 6", text: "Play drills. Listen reads this page." },
+    { sel: "[data-tour='downloads']", n: "6 of 6", text: "Downloads has the sheets, cards, and zip." }
   ];
   var stepAt = 0;
   steps.forEach(function (step, index) {
@@ -594,53 +595,45 @@
     var mascot = band(".bot-dock:not(.is-open) .monkey-btn");
     var banner = band(".canon-banner");
     var gap = 12;
-    var cardH = card.offsetHeight;
     var roomTop = Math.max(header ? header.bottom : 8, banner ? banner.bottom : 0) + gap;
     var roomBottom = window.innerHeight - gap;
     if (phone && phone.top - gap < roomBottom) roomBottom = phone.top - gap;
-    if (isPhone() && mascot && mascot.left > 80) {
-      var side = 12;
-      var rightLimit = Math.round(mascot.left - gap);
-      card.style.width = Math.max(180, rightLimit - side) + "px";
-      card.style.left = side + "px";
-      card.style.right = "auto";
-      card.style.transform = "none";
-    }
+    if (isPhone() && mascot && mascot.top - gap < roomBottom) roomBottom = mascot.top - gap;
     var hero = document.querySelector("main h1");
     var heroBox = hero ? hero.getBoundingClientRect() : null;
+    var firstLines = document.querySelector("main .lede, main h1 + p");
+    var guardBox = firstLines ? firstLines.getBoundingClientRect() : heroBox;
+    var guardBottom = guardBox && guardBox.height > 8 ? guardBox.bottom : (heroBox ? heroBox.bottom : roomTop);
+    var floor = isPhone() ? Math.max(roomTop, Math.round(guardBottom + gap)) : 8;
+    card.classList.remove("is-capped");
+    card.style.maxHeight = "none";
+    card.style.height = "auto";
+    card.style.left = "50%";
+    card.style.right = "auto";
+    card.style.width = "";
+    card.style.transform = "translateX(-50%)";
+    var natural = card.offsetHeight;
+    var available = Math.max(0, roomBottom - floor);
+    if (isPhone() && available > 0 && natural > available) {
+      card.classList.add("is-capped");
+      card.style.maxHeight = available + "px";
+      natural = card.offsetHeight;
+    }
+    var cardH = natural;
     function hitsHero(candidate) {
       if (!heroBox || heroBox.height < 8) return false;
       return !(candidate + cardH < heroBox.top - 8 || candidate > heroBox.bottom + 8);
     }
     var top = roomBottom - cardH;
-    var firstLines = document.querySelector("main .lede, main .kicker + h1 + p, main h1 + p");
-    var guardBox = firstLines ? firstLines.getBoundingClientRect() : heroBox;
-    var guardBottom = guardBox && guardBox.height > 8 ? guardBox.bottom : (heroBox ? heroBox.bottom : roomTop);
-    var floor = 8;
-    if (isPhone()) {
-      floor = Math.max(roomTop, Math.round(guardBottom + gap));
-      card.style.maxHeight = Math.max(96, roomBottom - floor) + "px";
-      cardH = card.offsetHeight;
-      top = roomBottom - cardH;
-      if (top < floor) top = floor;
-    } else if (hitsHero(top)) {
+    if (!isPhone() && hitsHero(top)) {
       var belowHero = heroBox.bottom + gap;
       var aboveHero = heroBox.top - cardH - gap;
       if (belowHero >= roomTop && belowHero + cardH <= roomBottom) top = belowHero;
       else if (aboveHero >= roomTop) top = aboveHero;
     }
-    if (top + cardH > roomBottom) {
-      card.style.maxHeight = Math.max(72, roomBottom - Math.max(floor, roomTop)) + "px";
-      cardH = card.offsetHeight;
-      top = roomBottom - cardH;
-    }
-    if (top < floor && floor + cardH <= roomBottom) top = floor;
+    if (top + cardH > roomBottom) top = roomBottom - cardH;
+    if (isPhone() && top < floor && floor + cardH <= roomBottom) top = floor;
     if (top < 8) top = 8;
-    if (!isPhone() || !(mascot && mascot.left > 80)) {
-      card.style.left = "50%";
-      card.style.right = "auto";
-      card.style.transform = "translateX(-50%)";
-    }
     card.style.top = Math.round(top) + "px";
   }
   function showTour() {
