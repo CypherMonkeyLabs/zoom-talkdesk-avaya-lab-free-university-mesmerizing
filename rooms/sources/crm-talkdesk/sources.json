@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Schedule Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-schedule-import-api.md"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk authentication (OAuth 2.0)",
+      "url": "https://docs.talkdesk.com/docs/authentication.md"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Phone developer documentation",
+      "url": "https://developers.zoom.us/docs/phone/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk contact payload fields. confirm. The guide body was not opened.",
+      "url": null
+    }
+  ]
+}

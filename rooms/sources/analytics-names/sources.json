@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Forecast Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-forecast-import-api.md"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Service level, average handle time, and occupancy percentages. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

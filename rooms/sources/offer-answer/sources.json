@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "RFC",
+      "title": "RFC 3264, offer/answer with SDP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3264"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 4566, SDP (the page says this RFC is obsolete)",
+      "url": "https://www.rfc-editor.org/rfc/rfc4566"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 8866, SDP",
+      "url": "https://www.rfc-editor.org/rfc/rfc8866"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 3261, SIP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3261"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 3711, SRTP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3711"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Vendor default codec. confirm. Not opened for Zoom, Talkdesk, or Avaya.",
+      "url": null
+    }
+  ]
+}

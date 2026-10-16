@@ -1,0 +1,45 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Aura platform",
+      "url": "https://www.avaya.com/en/products/aura/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya products",
+      "url": "https://www.avaya.com/en/products/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya unified communications",
+      "url": "https://www.avaya.com/en/products/unified-communications/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya home",
+      "url": "https://www.avaya.com/en/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Avaya",
+      "url": "https://en.wikipedia.org/wiki/Avaya"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "SIP trunking",
+      "url": "https://en.wikipedia.org/wiki/SIP_trunking"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya Aura component list for a release. confirm. Not in the page text extracted here.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya current revenue. confirm. The 2021 figure is stale on Wikipedia and is not used.",
+      "url": null
+    }
+  ]
+}

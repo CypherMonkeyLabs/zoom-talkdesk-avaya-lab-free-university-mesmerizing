@@ -1,0 +1,508 @@
+{
+  "pages": [
+    {
+      "title": "Home",
+      "href": "index.html",
+      "blurb": "12 tracks. Start here if you are new.",
+      "keys": [
+        "home"
+      ]
+    },
+    {
+      "title": "Learn",
+      "href": "start.html",
+      "blurb": "Ten minutes, or the full course.",
+      "keys": [
+        "learn"
+      ]
+    },
+    {
+      "title": "Diagrams",
+      "href": "diagrams.html",
+      "blurb": "Still drawings you can export.",
+      "keys": [
+        "diagrams"
+      ]
+    },
+    {
+      "title": "Flows",
+      "href": "flows.html",
+      "blurb": "Ladders with a moving packet.",
+      "keys": [
+        "flows"
+      ]
+    },
+    {
+      "title": "Play",
+      "href": "play.html",
+      "blurb": "A short drill in this browser.",
+      "keys": [
+        "play"
+      ]
+    },
+    {
+      "title": "Listen",
+      "href": "listen.html",
+      "blurb": "Read-along notes for the guide.",
+      "keys": [
+        "listen"
+      ]
+    },
+    {
+      "title": "Downloads",
+      "href": "downloads.html",
+      "blurb": "Sheets, cards, and one zip.",
+      "keys": [
+        "downloads"
+      ]
+    },
+    {
+      "title": "Ecosystem",
+      "href": "ecosystem.html",
+      "blurb": "Glossary, bridges, and sister labs.",
+      "keys": [
+        "ecosystem"
+      ]
+    },
+    {
+      "title": "Help",
+      "href": "help.html",
+      "blurb": "How the menu, course, and bot work.",
+      "keys": [
+        "help"
+      ]
+    },
+    {
+      "title": "Zoom Workplace",
+      "href": "tracks/T1.html",
+      "blurb": "Names the opened pages actually use",
+      "keys": [
+        "zoom workplace",
+        "t1"
+      ]
+    },
+    {
+      "title": "Zoom Contact Center",
+      "href": "tracks/T2.html",
+      "blurb": "Agents, consumers, and Virtual Agent",
+      "keys": [
+        "zoom contact center",
+        "t2"
+      ]
+    },
+    {
+      "title": "Talkdesk",
+      "href": "tracks/T3.html",
+      "blurb": "Cloud contact center and public APIs",
+      "keys": [
+        "talkdesk",
+        "t3"
+      ]
+    },
+    {
+      "title": "Avaya Aura",
+      "href": "tracks/T4.html",
+      "blurb": "Enterprise voice on the products page",
+      "keys": [
+        "avaya aura",
+        "t4"
+      ]
+    },
+    {
+      "title": "Avaya Infinity",
+      "href": "tracks/T5.html",
+      "blurb": "The CX platform the site opened",
+      "keys": [
+        "avaya infinity",
+        "t5"
+      ]
+    },
+    {
+      "title": "SIP and media",
+      "href": "tracks/T6.html",
+      "blurb": "Signaling, SDP, and RTP",
+      "keys": [
+        "sip and media",
+        "t6"
+      ]
+    },
+    {
+      "title": "Call flows and routing",
+      "href": "tracks/T7.html",
+      "blurb": "Ladders you can defend",
+      "keys": [
+        "call flows and routing",
+        "t7"
+      ]
+    },
+    {
+      "title": "WFM, recording, QM",
+      "href": "tracks/T8.html",
+      "blurb": "Schedules, SIPREC, and scores",
+      "keys": [
+        "wfm, recording, qm",
+        "t8"
+      ]
+    },
+    {
+      "title": "E911 and analytics",
+      "href": "tracks/T9.html",
+      "blurb": "Location, and figures you confirm",
+      "keys": [
+        "e911 and analytics",
+        "t9"
+      ]
+    },
+    {
+      "title": "CRM and AI bridges",
+      "href": "tracks/T10.html",
+      "blurb": "Embeds, sync, and Avaya AI lines",
+      "keys": [
+        "crm and ai bridges",
+        "t10"
+      ]
+    },
+    {
+      "title": "Migration paths",
+      "href": "tracks/T11.html",
+      "blurb": "Infinity, and Cisco pages that did not open",
+      "keys": [
+        "migration paths",
+        "t11"
+      ]
+    },
+    {
+      "title": "Licensing and roadmap",
+      "href": "tracks/T12.html",
+      "blurb": "Named licenses, then confirm rows",
+      "keys": [
+        "licensing and roadmap",
+        "t12"
+      ]
+    },
+    {
+      "title": "What Zoom Workplace names",
+      "href": "rooms/zoom-workplace.html",
+      "blurb": "T1-R01",
+      "keys": [
+        "zoom-workplace",
+        "what zoom workplace names"
+      ]
+    },
+    {
+      "title": "Zoom Phone developer paths",
+      "href": "rooms/zoom-phone-dev.html",
+      "blurb": "T1-R02",
+      "keys": [
+        "zoom-phone-dev",
+        "zoom phone developer paths"
+      ]
+    },
+    {
+      "title": "Zoom API access, one hour at a time",
+      "href": "rooms/zoom-api-hour.html",
+      "blurb": "T1-R03",
+      "keys": [
+        "zoom-api-hour",
+        "zoom api access, one hour at a time"
+      ]
+    },
+    {
+      "title": "Agents and consumers",
+      "href": "rooms/cc-agents.html",
+      "blurb": "T2-R04",
+      "keys": [
+        "cc-agents",
+        "agents and consumers"
+      ]
+    },
+    {
+      "title": "Three ways to put Contact Center in an app",
+      "href": "rooms/cc-embed.html",
+      "blurb": "T2-R05",
+      "keys": [
+        "cc-embed",
+        "three ways to put contact center in an app"
+      ]
+    },
+    {
+      "title": "Zoom Virtual Agent, and the license line",
+      "href": "rooms/virtual-agent.html",
+      "blurb": "T2-R06",
+      "keys": [
+        "virtual-agent",
+        "zoom virtual agent, and the license line"
+      ]
+    },
+    {
+      "title": "Talkdesk as a cloud contact center",
+      "href": "rooms/talkdesk-cloud.html",
+      "blurb": "T3-R07",
+      "keys": [
+        "talkdesk-cloud",
+        "talkdesk as a cloud contact center"
+      ]
+    },
+    {
+      "title": "Talkdesk OAuth, account or user",
+      "href": "rooms/talkdesk-oauth.html",
+      "blurb": "T3-R08",
+      "keys": [
+        "talkdesk-oauth",
+        "talkdesk oauth, account or user"
+      ]
+    },
+    {
+      "title": "Connections, contacts, and agents",
+      "href": "rooms/talkdesk-sync.html",
+      "blurb": "T3-R09",
+      "keys": [
+        "talkdesk-sync",
+        "connections, contacts, and agents"
+      ]
+    },
+    {
+      "title": "Avaya Aura on the page that opened",
+      "href": "rooms/aura-named.html",
+      "blurb": "T4-R10",
+      "keys": [
+        "aura-named",
+        "avaya aura on the page that opened"
+      ]
+    },
+    {
+      "title": "Where Avaya technical pages live",
+      "href": "rooms/aura-docs.html",
+      "blurb": "T4-R11",
+      "keys": [
+        "aura-docs",
+        "where avaya technical pages live"
+      ]
+    },
+    {
+      "title": "Voice platform and CX platform",
+      "href": "rooms/aura-versus-infinity.html",
+      "blurb": "T4-R12",
+      "keys": [
+        "aura-versus-infinity",
+        "voice platform and cx platform"
+      ]
+    },
+    {
+      "title": "Lines on the Infinity page",
+      "href": "rooms/infinity-lines.html",
+      "blurb": "T5-R13",
+      "keys": [
+        "infinity-lines",
+        "lines on the infinity page"
+      ]
+    },
+    {
+      "title": "Experience Platform and the redirect",
+      "href": "rooms/experience-platform-name.html",
+      "blurb": "T5-R14",
+      "keys": [
+        "experience-platform-name",
+        "experience platform and the redirect"
+      ]
+    },
+    {
+      "title": "Future hooks on Avaya's own site",
+      "href": "rooms/avaya-ai-hooks.html",
+      "blurb": "T5-R15",
+      "keys": [
+        "avaya-ai-hooks",
+        "future hooks on avaya's own site"
+      ]
+    },
+    {
+      "title": "What SIP is for",
+      "href": "rooms/sip-jobs.html",
+      "blurb": "T6-R16",
+      "keys": [
+        "sip-jobs",
+        "what sip is for"
+      ]
+    },
+    {
+      "title": "Offer, answer, and SDP",
+      "href": "rooms/offer-answer.html",
+      "blurb": "T6-R17",
+      "keys": [
+        "offer-answer",
+        "offer, answer, and sdp"
+      ]
+    },
+    {
+      "title": "RTP, SRTP, and delay words",
+      "href": "rooms/rtp-and-srtp.html",
+      "blurb": "T6-R18",
+      "keys": [
+        "rtp-and-srtp",
+        "rtp, srtp, and delay words"
+      ]
+    },
+    {
+      "title": "A ladder you are allowed to draw",
+      "href": "rooms/ladder-sketch.html",
+      "blurb": "T7-R19",
+      "keys": [
+        "ladder-sketch",
+        "a ladder you are allowed to draw"
+      ]
+    },
+    {
+      "title": "Routing words that survived contact",
+      "href": "rooms/routing-words.html",
+      "blurb": "T7-R20",
+      "keys": [
+        "routing-words",
+        "routing words that survived contact"
+      ]
+    },
+    {
+      "title": "Transfer, conference, and what stays confirm",
+      "href": "rooms/transfer-confirm.html",
+      "blurb": "T7-R21",
+      "keys": [
+        "transfer-confirm",
+        "transfer, conference, and what stays confirm"
+      ]
+    },
+    {
+      "title": "Workforce management, the general word",
+      "href": "rooms/wfm-word.html",
+      "blurb": "T8-R22",
+      "keys": [
+        "wfm-word",
+        "workforce management, the general word"
+      ]
+    },
+    {
+      "title": "Talkdesk schedule and forecast imports",
+      "href": "rooms/talkdesk-wfm-api.html",
+      "blurb": "T8-R23",
+      "keys": [
+        "talkdesk-wfm-api",
+        "talkdesk schedule and forecast imports"
+      ]
+    },
+    {
+      "title": "Recording architecture and quality scores",
+      "href": "rooms/siprec-qm.html",
+      "blurb": "T8-R24",
+      "keys": [
+        "siprec-qm",
+        "recording architecture and quality scores"
+      ]
+    },
+    {
+      "title": "E911 words from the pages that opened",
+      "href": "rooms/e911-words.html",
+      "blurb": "T9-R25",
+      "keys": [
+        "e911-words",
+        "e911 words from the pages that opened"
+      ]
+    },
+    {
+      "title": "Analytics names, not fake charts",
+      "href": "rooms/analytics-names.html",
+      "blurb": "T9-R26",
+      "keys": [
+        "analytics-names",
+        "analytics names, not fake charts"
+      ]
+    },
+    {
+      "title": "Numbers you may repeat, and numbers you may not",
+      "href": "rooms/numbers-confirm.html",
+      "blurb": "T9-R27",
+      "keys": [
+        "numbers-confirm",
+        "numbers you may repeat, and numbers you may not"
+      ]
+    },
+    {
+      "title": "CRM calling on the Zoom Phone page",
+      "href": "rooms/crm-zoom.html",
+      "blurb": "T10-R28",
+      "keys": [
+        "crm-zoom",
+        "crm calling on the zoom phone page"
+      ]
+    },
+    {
+      "title": "Talkdesk contact and agent sync",
+      "href": "rooms/crm-talkdesk.html",
+      "blurb": "T10-R29",
+      "keys": [
+        "crm-talkdesk",
+        "talkdesk contact and agent sync"
+      ]
+    },
+    {
+      "title": "AI agents across three vendors",
+      "href": "rooms/ai-agents.html",
+      "blurb": "T10-R30",
+      "keys": [
+        "ai-agents",
+        "ai agents across three vendors"
+      ]
+    },
+    {
+      "title": "A migration habit that does not invent a cutover",
+      "href": "rooms/migration-habit.html",
+      "blurb": "T11-R31",
+      "keys": [
+        "migration-habit",
+        "a migration habit that does not invent a cutover"
+      ]
+    },
+    {
+      "title": "Leaving Aura or moving toward Infinity",
+      "href": "rooms/from-avaya.html",
+      "blurb": "T11-R32",
+      "keys": [
+        "from-avaya",
+        "leaving aura or moving toward infinity"
+      ]
+    },
+    {
+      "title": "CUCM and UCCE when Cisco did not open",
+      "href": "rooms/cucm-ucce-gap.html",
+      "blurb": "T11-R33",
+      "keys": [
+        "cucm-ucce-gap",
+        "cucm and ucce when cisco did not open"
+      ]
+    },
+    {
+      "title": "Licenses the pages actually name",
+      "href": "rooms/licenses-named.html",
+      "blurb": "T12-R34",
+      "keys": [
+        "licenses-named",
+        "licenses the pages actually name"
+      ]
+    },
+    {
+      "title": "Certifications you still have to open",
+      "href": "rooms/certifications-confirm.html",
+      "blurb": "T12-R35",
+      "keys": [
+        "certifications-confirm",
+        "certifications you still have to open"
+      ]
+    },
+    {
+      "title": "Roadmap, timelines, and the check date",
+      "href": "rooms/roadmap-confirm.html",
+      "blurb": "T12-R36",
+      "keys": [
+        "roadmap-confirm",
+        "roadmap, timelines, and the check date"
+      ]
+    }
+  ]
+}

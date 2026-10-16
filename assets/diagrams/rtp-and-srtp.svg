@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="RTP, SRTP, and delay words">
+<defs>
+<linearGradient id="grtpandsrtp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#312e81"/><stop offset="1" stop-color="#0e7490"/></linearGradient>
+</defs>
+<rect width="720" height="420" rx="28" fill="url(#grtpandsrtp)"/>
+<text x="32" y="48" fill="#ffffff" font-family="system-ui,sans-serif" font-size="26" font-weight="700">RTP, SRTP, and delay words</text>
+<text x="32" y="76" fill="#e0f2fe" font-family="system-ui,sans-serif" font-size="15">Media. Teaching sketch. Confirm a live system.</text>
+<rect x="53" y="150" width="140" height="88" rx="18" fill="#99f6e4"/>
+<text x="123" y="200" text-anchor="middle" fill="#1e1b4b" font-family="system-ui,sans-serif" font-size="15" font-weight="700">RTP</text>
+<rect x="211" y="150" width="140" height="88" rx="18" fill="#bfdbfe"/>
+<text x="281" y="200" text-anchor="middle" fill="#1e1b4b" font-family="system-ui,sans-serif" font-size="15" font-weight="700">SRTP</text>
+<path d="M193 194 H211" fill="none" stroke="#fde047" stroke-width="6" stroke-linecap="round"/>
+<rect x="369" y="150" width="140" height="88" rx="18" fill="#fde68a"/>
+<text x="439" y="200" text-anchor="middle" fill="#1e1b4b" font-family="system-ui,sans-serif" font-size="15" font-weight="700">G.711</text>
+<path d="M351 194 H369" fill="none" stroke="#fde047" stroke-width="6" stroke-linecap="round"/>
+<rect x="527" y="150" width="140" height="88" rx="18" fill="#fecdd3"/>
+<text x="597" y="200" text-anchor="middle" fill="#1e1b4b" font-family="system-ui,sans-serif" font-size="15" font-weight="700">G.114</text>
+<path d="M509 194 H527" fill="none" stroke="#fde047" stroke-width="6" stroke-linecap="round"/>
+<text x="32" y="390" fill="#e0f2fe" font-family="system-ui,sans-serif" font-size="14">Names come from pages opened in 2026-10. A missing name stays confirm.</text>
+</svg>

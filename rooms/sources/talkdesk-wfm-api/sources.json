@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Schedule Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-schedule-import-api.md"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Forecast Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-forecast-import-api.md"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk authentication (OAuth 2.0)",
+      "url": "https://docs.talkdesk.com/docs/authentication.md"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk WFM subscription limit numbers. confirm. Section seen, numbers not copied.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Zoom WFM import API. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

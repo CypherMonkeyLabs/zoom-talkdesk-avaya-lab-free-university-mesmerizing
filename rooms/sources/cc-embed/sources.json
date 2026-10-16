@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center developer documentation",
+      "url": "https://developers.zoom.us/docs/contact-center/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Phone developer documentation",
+      "url": "https://developers.zoom.us/docs/phone/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "A named Zoom Contact Center customer quote. confirm. No customer story was opened.",
+      "url": null
+    }
+  ]
+}

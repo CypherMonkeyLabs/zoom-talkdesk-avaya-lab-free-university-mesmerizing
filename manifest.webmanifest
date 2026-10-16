@@ -1,0 +1,15 @@
+{
+  "name": "Zoom Talkdesk Avaya Lab",
+  "short_name": "ZTA Lab",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6ff",
+  "theme_color": "#0f9b8e",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

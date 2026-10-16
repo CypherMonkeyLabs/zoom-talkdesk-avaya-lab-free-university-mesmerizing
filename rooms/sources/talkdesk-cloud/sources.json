@@ -1,0 +1,40 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk home",
+      "url": "https://www.talkdesk.com/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk cloud contact center",
+      "url": "https://www.talkdesk.com/cloud-contact-center/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk contact center platform",
+      "url": "https://www.talkdesk.com/contact-center-platform/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk developer documentation",
+      "url": "https://docs.talkdesk.com/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk Wikipedia article. confirm. The title returned HTTP 404.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk support articles. confirm. The support site root returned HTTP 403.",
+      "url": null
+    }
+  ]
+}

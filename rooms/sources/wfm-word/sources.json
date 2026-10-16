@@ -1,0 +1,40 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Wikipedia",
+      "title": "Workforce management",
+      "url": "https://en.wikipedia.org/wiki/Workforce_management"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Schedule Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-schedule-import-api.md"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Forecast Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-forecast-import-api.md"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya WFM product name. confirm. Not in the pages extracted here.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Erlang formula. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

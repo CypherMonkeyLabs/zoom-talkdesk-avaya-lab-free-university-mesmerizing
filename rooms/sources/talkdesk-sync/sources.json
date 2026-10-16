@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk developer documentation",
+      "url": "https://docs.talkdesk.com/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk authentication (OAuth 2.0)",
+      "url": "https://docs.talkdesk.com/docs/authentication.md"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk CRM field map. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

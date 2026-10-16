@@ -1,0 +1,40 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Wikipedia",
+      "title": "Computer telephony integration",
+      "url": "https://en.wikipedia.org/wiki/Computer_telephony_integration"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Call centre",
+      "url": "https://en.wikipedia.org/wiki/Call_centre"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center developer documentation",
+      "url": "https://developers.zoom.us/docs/contact-center/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Forecast Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-forecast-import-api.md"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Queue timeout seconds. confirm. Not opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Zoom Contact Center queue object name. confirm. Not in the text that was read.",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "RFC",
+      "title": "RFC 3550, RTP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3550"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 3711, SRTP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3711"
+    },
+    {
+      "kind": "ITU",
+      "title": "ITU-T G.711, pulse code modulation of voice frequencies",
+      "url": "https://www.itu.int/rec/T-REC-G.711"
+    },
+    {
+      "kind": "ITU",
+      "title": "ITU-T G.114, one-way transmission time",
+      "url": "https://www.itu.int/rec/T-REC-G.114"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 8825, WebRTC protocol overview",
+      "url": "https://www.rfc-editor.org/rfc/rfc8825"
+    },
+    {
+      "kind": "Confirm",
+      "title": "G.114 millisecond planning number. confirm. Not read on the page that opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Vendor media profile name. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk authentication (OAuth 2.0)",
+      "url": "https://docs.talkdesk.com/docs/authentication.md"
+    },
+    {
+      "kind": "IANA",
+      "title": "IANA SIP parameters",
+      "url": "https://www.iana.org/assignments/sip-parameters/sip-parameters.xhtml"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Avaya",
+      "url": "https://en.wikipedia.org/wiki/Avaya"
+    },
+    {
+      "kind": "Confirm",
+      "title": "License prices, port lists, exam scores, roadmap months. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

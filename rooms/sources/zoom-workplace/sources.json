@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Say Hello to Zoom Workplace",
+      "url": "https://www.zoom.com/en/blog/zoom-workplace/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Zoom Communications",
+      "url": "https://en.wikipedia.org/wiki/Zoom_Communications"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Official Zoom Support",
+      "url": "https://support.zoom.com/hc/en"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Zoom Phone consumer product page. confirm. Requests for several /products/zoom-phone paths returned HTTP 404.",
+      "url": null
+    }
+  ]
+}
