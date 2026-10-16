@@ -9,6 +9,9 @@ Counts are written to `assets/data/counts.json` by `scripts/build_lab.py`. A row
 ```bash
 python3 scripts/build_lab.py
 node scripts/verify.mjs
+node scripts/check-tour-phone.mjs
 ```
+
+`scripts/check-tour-phone.mjs` uses Playwright at 390×844. It needs `playwright` installed (`npm install --no-save playwright` and `npx playwright install chromium`).
 
 `scripts/verify.mjs` runs on Node 20 and Node 22. Node 22 uses the global WebSocket. Node 20 uses the small client in that script. `ZTA_FORCE_WS_FALLBACK=1` runs the Node 20 client even when a global WebSocket exists.
