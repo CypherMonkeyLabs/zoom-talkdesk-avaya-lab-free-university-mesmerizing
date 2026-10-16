@@ -1,0 +1,40 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Virtual Agent developer documentation",
+      "url": "https://developers.zoom.us/docs/virtual-agent/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk home",
+      "url": "https://www.talkdesk.com/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "AI omni-channel learning lab",
+      "url": "https://cyphermonkeylabs.com/ai-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk AI agent runtime. confirm. Not defined in the lines that were read.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Current Zoom assistant name if it replaced AI Companion. confirm.",
+      "url": null
+    }
+  ]
+}

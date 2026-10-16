@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "RFC",
+      "title": "RFC 3261, SIP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3261"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 3550, RTP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3550"
+    },
+    {
+      "kind": "IANA",
+      "title": "IANA SIP parameters",
+      "url": "https://www.iana.org/assignments/sip-parameters/sip-parameters.xhtml"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Session Initiation Protocol",
+      "url": "https://en.wikipedia.org/wiki/Session_Initiation_Protocol"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "SIP trunking",
+      "url": "https://en.wikipedia.org/wiki/SIP_trunking"
+    },
+    {
+      "kind": "Confirm",
+      "title": "SIP timer T1 value in this lab. confirm. The timer section was not extracted.",
+      "url": null
+    }
+  ]
+}

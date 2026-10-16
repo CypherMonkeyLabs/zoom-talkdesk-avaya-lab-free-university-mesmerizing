@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "IANA",
+      "title": "IANA SIP parameters",
+      "url": "https://www.iana.org/assignments/sip-parameters/sip-parameters.xhtml"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk authentication (OAuth 2.0)",
+      "url": "https://docs.talkdesk.com/docs/authentication.md"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Vendor roadmap quarters, end-of-support dates, and hardware generations. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

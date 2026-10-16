@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Phone developer documentation",
+      "url": "https://developers.zoom.us/docs/phone/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Computer telephony integration",
+      "url": "https://en.wikipedia.org/wiki/Computer_telephony_integration"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Named CRM vendor field map for Zoom Phone. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

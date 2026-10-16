@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "RFC",
+      "title": "RFC 7245, architecture for media recording using SIP",
+      "url": "https://www.rfc-editor.org/rfc/rfc7245"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 7866, Session Recording Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc7866"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Call-recording consent statute. confirm. No privacy statute was opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Vendor QM score formula. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

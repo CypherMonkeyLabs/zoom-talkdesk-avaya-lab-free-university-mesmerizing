@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Offer, answer, and SDP ladder">
+<defs><linearGradient id="Lofferanswer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e1b4b"/><stop offset="1" stop-color="#155e75"/></linearGradient></defs>
+<rect width="720" height="420" rx="28" fill="url(#Lofferanswer)"/>
+<text x="28" y="42" fill="#fff" font-family="system-ui,sans-serif" font-size="24" font-weight="700">Offer, answer, and SDP</text>
+<text x="120" y="78" text-anchor="middle" fill="#fde68a" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Caller</text>
+<text x="360" y="78" text-anchor="middle" fill="#99f6e4" font-family="system-ui,sans-serif" font-size="16" font-weight="700">SIP</text>
+<text x="600" y="78" text-anchor="middle" fill="#fecdd3" font-family="system-ui,sans-serif" font-size="16" font-weight="700">Called</text>
+<path d="M120 90 V340 M360 90 V340 M600 90 V340" stroke="#e0f2fe" stroke-width="3"/>
+<path d="M120 130 H360" stroke="#fff" stroke-width="4"/>
+<text x="240" y="122" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13">session setup</text>
+<path d="M360 180 H600" stroke="#fff" stroke-width="4"/>
+<text x="480" y="172" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13">session setup</text>
+<path d="M120 250 H600" stroke="#fde047" stroke-width="4" stroke-dasharray="8 6"/>
+<text x="360" y="242" text-anchor="middle" fill="#fde047" font-family="system-ui,sans-serif" font-size="13">RTP, not required to hairpin</text>
+<circle r="8" fill="#fde047"><animateMotion dur="2.8s" repeatCount="indefinite" path="M120 90 V320"/></circle>
+<text x="28" y="390" fill="#e0f2fe" font-family="system-ui,sans-serif" font-size="14">Teaching sketch from RFC 3261 and RFC 3550. Not a packet capture.</text>
+</svg>

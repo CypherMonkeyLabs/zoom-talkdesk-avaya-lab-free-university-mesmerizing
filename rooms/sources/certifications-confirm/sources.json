@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Documentation center",
+      "url": "https://documentation.avaya.com/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Official Zoom Support",
+      "url": "https://support.zoom.com/hc/en"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Zoom, Talkdesk, and Avaya human exam codes and scores. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya home",
+      "url": "https://www.avaya.com/en/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya public roadmap with dates. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

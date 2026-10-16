@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Virtual Agent developer documentation",
+      "url": "https://developers.zoom.us/docs/virtual-agent/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center developer documentation",
+      "url": "https://developers.zoom.us/docs/contact-center/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Virtual Agent price and web-license rule. confirm. Only the Android and iOS license sentence was read.",
+      "url": null
+    }
+  ]
+}

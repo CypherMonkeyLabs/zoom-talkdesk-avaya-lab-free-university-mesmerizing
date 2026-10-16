@@ -1,0 +1,359 @@
+{
+  "cards": [
+    {
+      "front": "Zoom Workplace",
+      "back": "The product-family name on the Zoom blog and navigation that opened in this session.",
+      "source": "rooms/zoom-workplace.html"
+    },
+    {
+      "front": "Zoom CX",
+      "back": "The navigation group that lists Contact Center, Virtual Agent, Quality Management, and Workforce Management on the pages that opened.",
+      "source": "rooms/zoom-workplace.html"
+    },
+    {
+      "front": "Smart Embed",
+      "back": "The Zoom Phone option that embeds the phone widget in a web application.",
+      "source": "rooms/zoom-phone-dev.html"
+    },
+    {
+      "front": "Zoom App for Phone",
+      "back": "An app that runs inside the Zoom desktop client, as the developer page describes it.",
+      "source": "rooms/zoom-phone-dev.html"
+    },
+    {
+      "front": "Access token",
+      "back": "The credential the Zoom API reference says to send in the Authorization header.",
+      "source": "rooms/zoom-api-hour.html"
+    },
+    {
+      "front": "Server-to-server OAuth",
+      "back": "The grant the page describes for requesting a token with app credentials, without a user consent code.",
+      "source": "rooms/zoom-api-hour.html"
+    },
+    {
+      "front": "Agent",
+      "back": "An internal Zoom Contact Center user, as the developer page defines the word.",
+      "source": "rooms/cc-agents.html"
+    },
+    {
+      "front": "Consumer",
+      "back": "An external person who contacts the business through voice, video, or chat.",
+      "source": "rooms/cc-agents.html"
+    },
+    {
+      "front": "Contact Center SDK",
+      "back": "The option the page describes when you want full control of the UI.",
+      "source": "rooms/cc-embed.html"
+    },
+    {
+      "front": "Scheduled callback",
+      "back": "A capability named on the SDK line, not on every embed option.",
+      "source": "rooms/cc-embed.html"
+    },
+    {
+      "front": "Zoom Virtual Agent",
+      "back": "The Zoom CX product whose developer guide describes a chat SDK for web and mobile.",
+      "source": "rooms/virtual-agent.html"
+    },
+    {
+      "front": "Virtual Agent license",
+      "back": "The license the guide says you must have for the Android and iOS SDKs.",
+      "source": "rooms/virtual-agent.html"
+    },
+    {
+      "front": "Talkdesk",
+      "back": "The contact center product named on the pages that opened, described there as cloud contact center software.",
+      "source": "rooms/talkdesk-cloud.html"
+    },
+    {
+      "front": "AppConnect",
+      "back": "The partner surface named in the Talkdesk docs index for listing partner apps.",
+      "source": "rooms/talkdesk-cloud.html"
+    },
+    {
+      "front": "Client Credentials",
+      "back": "The OAuth grant the Talkdesk page describes for account-level API access.",
+      "source": "rooms/talkdesk-oauth.html"
+    },
+    {
+      "front": "Authorization Code",
+      "back": "The OAuth grant the page describes for access on behalf of one Talkdesk user.",
+      "source": "rooms/talkdesk-oauth.html"
+    },
+    {
+      "front": "Contact Synchronization",
+      "back": "A Talkdesk integrations guide named in the documentation index.",
+      "source": "rooms/talkdesk-sync.html"
+    },
+    {
+      "front": "Connections",
+      "back": "The Talkdesk docs area for custom connections and custom actions.",
+      "source": "rooms/talkdesk-sync.html"
+    },
+    {
+      "front": "Avaya Aura",
+      "back": "The Avaya unified communications platform whose page title says enterprise voice and unified communications.",
+      "source": "rooms/aura-named.html"
+    },
+    {
+      "front": "Avaya IP Office",
+      "back": "A product listed with Aura and Aura Private Cloud on the unified communications pages.",
+      "source": "rooms/aura-named.html"
+    },
+    {
+      "front": "Avaya Documentation",
+      "back": "The documentation center at documentation.avaya.com.",
+      "source": "rooms/aura-docs.html"
+    },
+    {
+      "front": "Release",
+      "back": "The version of a book. This lab does not assume one.",
+      "source": "rooms/aura-docs.html"
+    },
+    {
+      "front": "Avaya Infinity",
+      "back": "The enterprise CX platform named on the Avaya page that opened.",
+      "source": "rooms/aura-versus-infinity.html"
+    },
+    {
+      "front": "AI-Assisted Modernization",
+      "back": "The Avaya line that says to use AI to understand workflows and move to Infinity faster.",
+      "source": "rooms/aura-versus-infinity.html"
+    },
+    {
+      "front": "Tandem Care",
+      "back": "Avaya's line for humans and AI working together with shared context.",
+      "source": "rooms/infinity-lines.html"
+    },
+    {
+      "front": "MCP",
+      "back": "The Avaya navigation line for open standards, model choice, and enterprise control.",
+      "source": "rooms/infinity-lines.html"
+    },
+    {
+      "front": "Experience Platform path",
+      "back": "The Avaya URL that redirected to Infinity in this session.",
+      "source": "rooms/experience-platform-name.html"
+    },
+    {
+      "front": "OneCloud CCaaS",
+      "back": "A name this lab could not verify. The product URL returned HTTP 404.",
+      "source": "rooms/experience-platform-name.html"
+    },
+    {
+      "front": "Future hook",
+      "back": "A vendor sentence you can cite, without a release you have opened.",
+      "source": "rooms/avaya-ai-hooks.html"
+    },
+    {
+      "front": "Roadmap date",
+      "back": "A month or year. Confirm unless the page lists it.",
+      "source": "rooms/avaya-ai-hooks.html"
+    },
+    {
+      "front": "SIP",
+      "back": "The Session Initiation Protocol, RFC 3261, for session signaling.",
+      "source": "rooms/sip-jobs.html"
+    },
+    {
+      "front": "Compact form",
+      "back": "A short header name. IANA lists i for Call-ID and m for Contact.",
+      "source": "rooms/sip-jobs.html"
+    },
+    {
+      "front": "Offer/answer",
+      "back": "The RFC 3264 model for agreeing media with SDP.",
+      "source": "rooms/offer-answer.html"
+    },
+    {
+      "front": "RFC 8866",
+      "back": "The SDP RFC that the RFC editor presented as the current document.",
+      "source": "rooms/offer-answer.html"
+    },
+    {
+      "front": "RTP",
+      "back": "Real-time Transport Protocol, RFC 3550.",
+      "source": "rooms/rtp-and-srtp.html"
+    },
+    {
+      "front": "SRTP",
+      "back": "Secure RTP, RFC 3711.",
+      "source": "rooms/rtp-and-srtp.html"
+    },
+    {
+      "front": "Ladder",
+      "back": "A drawing of messages between named boxes.",
+      "source": "rooms/ladder-sketch.html"
+    },
+    {
+      "front": "Teaching sketch",
+      "back": "A drawing this lab made to study. It is not a capture from a customer.",
+      "source": "rooms/ladder-sketch.html"
+    },
+    {
+      "front": "CTI",
+      "back": "Computer-telephony integration: coordinating telephone and computer interactions.",
+      "source": "rooms/routing-words.html"
+    },
+    {
+      "front": "Screen pop",
+      "back": "A desktop CTI outcome named on the Wikipedia page. Not the routing decision itself.",
+      "source": "rooms/routing-words.html"
+    },
+    {
+      "front": "Session modify",
+      "back": "The SIP job of changing a session that already exists. The method name stays confirm here.",
+      "source": "rooms/transfer-confirm.html"
+    },
+    {
+      "front": "Advanced Dialer",
+      "back": "A Talkdesk docs index name. The guide itself was not opened.",
+      "source": "rooms/transfer-confirm.html"
+    },
+    {
+      "front": "WFM",
+      "back": "Workforce management: the process Wikipedia describes, including forecasting and scheduling.",
+      "source": "rooms/wfm-word.html"
+    },
+    {
+      "front": "Forecast",
+      "back": "A planning input. On Talkdesk, a different API from the schedule import.",
+      "source": "rooms/wfm-word.html"
+    },
+    {
+      "front": "Schedule import",
+      "back": "The Talkdesk WFM API for CSV schedule events such as shifts, time off, breaks, and meetings.",
+      "source": "rooms/talkdesk-wfm-api.html"
+    },
+    {
+      "front": "Forecast import",
+      "back": "The Talkdesk WFM API for CSV forecast data, including overrides for queues and intervals.",
+      "source": "rooms/talkdesk-wfm-api.html"
+    },
+    {
+      "front": "SRC",
+      "back": "Session Recording Client, on the path of the communication session, in RFC 7866.",
+      "source": "rooms/siprec-qm.html"
+    },
+    {
+      "front": "SRS",
+      "back": "Session Recording Server, at the recording device, in RFC 7866.",
+      "source": "rooms/siprec-qm.html"
+    },
+    {
+      "front": "E911",
+      "back": "Enhanced 911, the North American system that provides a caller's location to 911 dispatchers, per the Wikipedia article.",
+      "source": "rooms/e911-words.html"
+    },
+    {
+      "front": "E112",
+      "back": "The European Union system named in that same summary.",
+      "source": "rooms/e911-words.html"
+    },
+    {
+      "front": "CX Insights",
+      "back": "A Zoom Contact Center navigation label. Not a formula in this lab.",
+      "source": "rooms/analytics-names.html"
+    },
+    {
+      "front": "Outcome",
+      "back": "The thing Avaya's line says to measure. The unit is confirm.",
+      "source": "rooms/analytics-names.html"
+    },
+    {
+      "front": "expires_in",
+      "back": "The field in Zoom's sample token response. The sample value is 3599.",
+      "source": "rooms/numbers-confirm.html"
+    },
+    {
+      "front": "Customer count",
+      "back": "A company figure. Not a sizing input unless the page says so.",
+      "source": "rooms/numbers-confirm.html"
+    },
+    {
+      "front": "CRM calling",
+      "back": "An integration example on the Zoom Phone developer page.",
+      "source": "rooms/crm-zoom.html"
+    },
+    {
+      "front": "Lookup key",
+      "back": "The value a screen pop uses to find a record. Confirm the key on your CRM.",
+      "source": "rooms/crm-zoom.html"
+    },
+    {
+      "front": "Contact Activity",
+      "back": "A Talkdesk integrations name in the docs index, separate from contact synchronization.",
+      "source": "rooms/crm-talkdesk.html"
+    },
+    {
+      "front": "HRIS",
+      "back": "The kind of external system the schedule API page gives as an example source.",
+      "source": "rooms/crm-talkdesk.html"
+    },
+    {
+      "front": "Virtual Agent",
+      "back": "Zoom's chat SDK product in the developer guide that opened.",
+      "source": "rooms/ai-agents.html"
+    },
+    {
+      "front": "Private domain",
+      "back": "The PBX or UC side in the SIP trunking article.",
+      "source": "rooms/migration-habit.html"
+    },
+    {
+      "front": "Rollback",
+      "back": "Returning a number to the path you saved. Confirm the product button.",
+      "source": "rooms/migration-habit.html"
+    },
+    {
+      "front": "Source system",
+      "back": "The platform that owns the number today.",
+      "source": "rooms/from-avaya.html"
+    },
+    {
+      "front": "Target system",
+      "back": "The platform you are testing. Cite its page.",
+      "source": "rooms/from-avaya.html"
+    },
+    {
+      "front": "Confirm box",
+      "back": "A system you know people migrate from, without a page you opened.",
+      "source": "rooms/cucm-ucce-gap.html"
+    },
+    {
+      "front": "Sibling lab",
+      "back": "Another CypherMonkey course. Not a vendor document.",
+      "source": "rooms/cucm-ucce-gap.html"
+    },
+    {
+      "front": "Named license",
+      "back": "A license a page you opened actually requires.",
+      "source": "rooms/licenses-named.html"
+    },
+    {
+      "front": "SKU",
+      "back": "A sales code. Confirm unless the page prints it.",
+      "source": "rooms/licenses-named.html"
+    },
+    {
+      "front": "Partner app certification",
+      "back": "The Talkdesk docs topic about certifying an app, not a person.",
+      "source": "rooms/certifications-confirm.html"
+    },
+    {
+      "front": "Avaya Learning",
+      "back": "A destination linked from the Avaya Documentation center. The catalog was not opened.",
+      "source": "rooms/certifications-confirm.html"
+    },
+    {
+      "front": "Last checked",
+      "back": "The month this lab opened the page. Here, 2026-10.",
+      "source": "rooms/roadmap-confirm.html"
+    },
+    {
+      "front": "updatedAt",
+      "back": "A date in Talkdesk's markdown front matter. Not automatically a product release.",
+      "source": "rooms/roadmap-confirm.html"
+    }
+  ]
+}

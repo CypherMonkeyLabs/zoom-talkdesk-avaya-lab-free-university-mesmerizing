@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Aura platform",
+      "url": "https://www.avaya.com/en/products/aura/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Phone developer documentation",
+      "url": "https://developers.zoom.us/docs/phone/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk cloud contact center",
+      "url": "https://www.talkdesk.com/cloud-contact-center/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "UC Lab Free University",
+      "url": "https://cyphermonkeylabs.com/uc-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Aura to Zoom or Talkdesk feature matrix. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

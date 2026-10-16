@@ -1,0 +1,40 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Virtual Agent developer documentation",
+      "url": "https://developers.zoom.us/docs/virtual-agent/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Schedule Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-schedule-import-api.md"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk WFM Forecast Import API",
+      "url": "https://docs.talkdesk.com/docs/wfm-forecast-import-api.md"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya products",
+      "url": "https://www.avaya.com/en/products/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "All prices and unpublished SKUs. confirm.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk WFM numeric cap. confirm.",
+      "url": null
+    }
+  ]
+}

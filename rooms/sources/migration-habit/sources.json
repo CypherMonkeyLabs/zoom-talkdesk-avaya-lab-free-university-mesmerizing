@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "SIP trunking",
+      "url": "https://en.wikipedia.org/wiki/SIP_trunking"
+    },
+    {
+      "kind": "RFC",
+      "title": "RFC 3261, SIP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3261"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Vendor migration runbook. confirm. Not opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Product name of the rollback button. confirm.",
+      "url": null
+    }
+  ]
+}

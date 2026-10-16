@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Aura platform",
+      "url": "https://www.avaya.com/en/products/aura/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Zoom Communications",
+      "url": "https://en.wikipedia.org/wiki/Zoom_Communications"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya OneCloud CCaaS current product page. confirm. HTTP 404 in this session.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Whether your contract still says Experience Platform. confirm. This lab cannot see the contract.",
+      "url": null
+    }
+  ]
+}

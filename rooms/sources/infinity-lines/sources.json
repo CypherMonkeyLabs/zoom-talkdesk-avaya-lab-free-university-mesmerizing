@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya home",
+      "url": "https://www.avaya.com/en/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya products",
+      "url": "https://www.avaya.com/en/products/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Infinity protocol list. confirm. Not in the sentences that opened.",
+      "url": null
+    }
+  ]
+}

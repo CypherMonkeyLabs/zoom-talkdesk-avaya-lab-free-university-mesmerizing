@@ -1,0 +1,65 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Sibling lab",
+      "title": "UC Lab Free University",
+      "url": "https://cyphermonkeylabs.com/uc-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "SIP Universe Free University",
+      "url": "https://cyphermonkeylabs.com/sip-universe-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "Webex Lab Free University",
+      "url": "https://cyphermonkeylabs.com/webex-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "Microsoft Voice and Contact Center Lab",
+      "url": "https://cyphermonkeylabs.com/microsoft-voice-cc-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "Genesys Cloud CX Lab",
+      "url": "https://cyphermonkeylabs.com/genesys-cloud-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "Five9 Lab",
+      "url": "https://cyphermonkeylabs.com/five9-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "Amazon Connect Lab",
+      "url": "https://cyphermonkeylabs.com/amazon-connect-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Sibling lab",
+      "title": "NICE CXone Lab",
+      "url": "https://cyphermonkeylabs.com/nice-cxone-lab-free-university-mesmerizing/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "SIP trunking",
+      "url": "https://en.wikipedia.org/wiki/SIP_trunking"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Cisco CUCM support page. confirm. HTTP 403.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Cisco UCCE product page. confirm. HTTP 403.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "CUCM and UCCE menu names. confirm.",
+      "url": null
+    }
+  ]
+}

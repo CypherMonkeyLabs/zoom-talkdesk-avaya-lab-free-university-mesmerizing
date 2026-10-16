@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center developer documentation",
+      "url": "https://developers.zoom.us/docs/contact-center/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center product page",
+      "url": "https://www.zoom.com/en/products/contact-center/"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "Call centre",
+      "url": "https://en.wikipedia.org/wiki/Call_centre"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Zoom Contact Center getting-started clicks. confirm. The developer page names the guide. This session did not open it.",
+      "url": null
+    }
+  ]
+}

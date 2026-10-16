@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Documentation center",
+      "url": "https://documentation.avaya.com/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Aura platform",
+      "url": "https://www.avaya.com/en/products/aura/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Official Zoom Support",
+      "url": "https://support.zoom.com/hc/en"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk developer documentation",
+      "url": "https://docs.talkdesk.com/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya certification exam code. confirm. Not opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Aura release-specific click path. confirm. No release book was opened.",
+      "url": null
+    }
+  ]
+}

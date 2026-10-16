@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Avaya",
+      "title": "Avaya Infinity platform",
+      "url": "https://www.avaya.com/en/products/infinity-platform/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya Aura platform",
+      "url": "https://www.avaya.com/en/products/aura/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya products",
+      "url": "https://www.avaya.com/en/products/"
+    },
+    {
+      "kind": "Avaya",
+      "title": "Avaya unified communications",
+      "url": "https://www.avaya.com/en/products/unified-communications/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "A dated Avaya migration plan from Aura to Infinity. confirm. The page has a sentence, not a schedule.",
+      "url": null
+    }
+  ]
+}

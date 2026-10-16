@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "RFC",
+      "title": "RFC 3261, SIP",
+      "url": "https://www.rfc-editor.org/rfc/rfc3261"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Contact Center developer documentation",
+      "url": "https://developers.zoom.us/docs/contact-center/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Confirm",
+      "title": "SIP REFER details. confirm. The section was not extracted.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Avaya transfer clicks. confirm. Not opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk Advanced Dialer behavior. confirm. Only the index name was seen.",
+      "url": null
+    }
+  ]
+}

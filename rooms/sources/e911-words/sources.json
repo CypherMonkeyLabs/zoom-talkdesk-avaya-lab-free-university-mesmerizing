@@ -1,0 +1,30 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Wikipedia",
+      "title": "Enhanced 911",
+      "url": "https://en.wikipedia.org/wiki/Enhanced_911"
+    },
+    {
+      "kind": "Wikipedia",
+      "title": "SIP trunking",
+      "url": "https://en.wikipedia.org/wiki/SIP_trunking"
+    },
+    {
+      "kind": "Confirm",
+      "title": "FCC MLTS page. confirm. HTTP 403 in this session.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Vendor emergency-calling admin guide for Zoom, Talkdesk, and Avaya. confirm. Not opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Kari's Law statutory text. confirm. Not opened.",
+      "url": null
+    }
+  ]
+}

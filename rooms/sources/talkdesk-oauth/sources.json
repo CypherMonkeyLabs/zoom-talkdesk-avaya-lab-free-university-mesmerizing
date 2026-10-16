@@ -1,0 +1,35 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk authentication (OAuth 2.0)",
+      "url": "https://docs.talkdesk.com/docs/authentication.md"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk developer documentation",
+      "url": "https://docs.talkdesk.com/"
+    },
+    {
+      "kind": "Talkdesk",
+      "title": "Talkdesk documentation index",
+      "url": "https://docs.talkdesk.com/llms.txt"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk OAuth scope names. confirm. The scopes page was linked and not opened.",
+      "url": null
+    },
+    {
+      "kind": "Confirm",
+      "title": "Talkdesk token lifetime. confirm. Not stated on the authentication page that opened.",
+      "url": null
+    }
+  ]
+}

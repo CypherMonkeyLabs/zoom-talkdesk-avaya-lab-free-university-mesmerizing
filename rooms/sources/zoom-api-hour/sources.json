@@ -1,0 +1,25 @@
+{
+  "opened": "2026-10",
+  "sources": [
+    {
+      "kind": "Zoom",
+      "title": "Zoom API reference",
+      "url": "https://developers.zoom.us/docs/api/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom Phone developer documentation",
+      "url": "https://developers.zoom.us/docs/phone/"
+    },
+    {
+      "kind": "Zoom",
+      "title": "Zoom compliance page",
+      "url": "https://www.zoom.com/en/trust/legal-compliance/"
+    },
+    {
+      "kind": "Confirm",
+      "title": "Your app's live scope list. confirm. The sample scope is not your tenant.",
+      "url": null
+    }
+  ]
+}
