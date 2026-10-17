@@ -1,6 +1,6 @@
 /* Cache shell for the ZTA study lab. */
-var CACHE = "zta-lab-r2";
-var SHELL = ["./index.html","./start.html","./assets/css/uc.css","./assets/js/frame.js","./guide/guide.js","./favicon.svg"];
+var CACHE = "zta-lab-r3";
+var SHELL = ["./index.html","./start.html","./assets/css/uc.css","./assets/js/frame.js","./guide/guide.js","./guide/guide.css","./guide/dragbot.js","./favicon.svg"];
 self.addEventListener("install", function (event) {
   event.waitUntil(caches.open(CACHE).then(function (cache) { return cache.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
