@@ -583,6 +583,10 @@
     card.style.width = "";
     card.style.transform = "translateX(-50%)";
     var natural = card.offsetHeight;
+    if (isPhone() && natural > roomBottom - floor) {
+      /* Not enough room below the intro text: let the card sit over the lede, never over the h1, so its words are never clipped. */
+      floor = Math.max(roomTop, Math.round((heroBox && heroBox.height > 8 ? heroBox.bottom : roomTop) + gap));
+    }
     var available = Math.max(0, roomBottom - floor);
     if (isPhone() && available > 0 && natural > available) {
       card.classList.add("is-capped");
