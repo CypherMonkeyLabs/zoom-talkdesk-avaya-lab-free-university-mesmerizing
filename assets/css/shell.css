@@ -7,11 +7,12 @@
   src: url("../fonts/outfit-latin.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
   ascent-override: 100%;
   descent-override: 26%;
   line-gap-override: 0%;
 }
+h1, h2, h3, h4 { font-family: "Canon Sans", system-ui, sans-serif; }
 /* Canon Grotesk file is not in this lab. Display uses Canon Sans. */
 
 :root {

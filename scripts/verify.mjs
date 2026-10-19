@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, readdirSync, statSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync, statSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { join, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
@@ -218,12 +218,15 @@ function nodeWebSocket(url) {
 }
 
 function startChrome(port) {
+  const profile = "/tmp/zta-chrome-verify";
+  rmSync(profile, { recursive: true, force: true });
+  mkdirSync(profile, { recursive: true });
   return spawn("google-chrome", [
     "--headless=new",
     "--disable-gpu",
     "--no-sandbox",
     "--remote-debugging-port=" + port,
-    "--user-data-dir=/tmp/zta-chrome",
+    "--user-data-dir=" + profile,
     "--window-size=1440,900",
     "about:blank",
   ], { stdio: "ignore" });
@@ -266,6 +269,8 @@ async function cdp() {
   }
   await send("Page.enable");
   await send("Runtime.enable");
+  await send("Network.enable");
+  await send("Network.setBypassServiceWorker", { bypass: true });
   return { chrome, ws, send };
 }
 
@@ -274,7 +279,8 @@ async function shot(send, url, width, height, file) {
   await send("Page.navigate", { url });
   await new Promise((r) => setTimeout(r, 1200));
   const evaled = await send("Runtime.evaluate", {
-    expression: `(() => {
+    expression: `(async () => {
+      if (document.fonts && document.fonts.ready) await document.fonts.ready;
       const h1 = document.querySelector("main h1");
       const lede = document.querySelector("main .lede");
       const guards = [h1, lede].filter(Boolean);
@@ -301,6 +307,7 @@ async function shot(send, url, width, height, file) {
         title: document.title
       };
     })()`,
+    awaitPromise: true,
     returnByValue: true,
   });
   const value = evaled.result && evaled.result.result && evaled.result.result.value;
@@ -308,7 +315,7 @@ async function shot(send, url, width, height, file) {
   else {
     if (value.overflow > 1) broken.push("overflow " + width + " " + url + " " + value.overflow);
     if (value.cover) broken.push("covers title " + width + " " + url + " " + value.cover);
-    if (value.font && !/Canon Sans|system-ui|sans-serif/i.test(value.font)) broken.push("font " + value.font);
+    if (value.font && !/Canon Sans|system-ui|sans-serif/i.test(value.font)) broken.push("font " + url + " " + value.font);
   }
   const image = await send("Page.captureScreenshot", { format: "png" });
   const data = image.result && image.result.data;

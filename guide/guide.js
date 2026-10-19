@@ -32,7 +32,8 @@
     monkeySvg() + "</button>" +
     '<section id="bot-panel" class="bot-panel" hidden>' +
     '<button type="button" class="sheet-handle" data-sheet-close aria-label="Close the guide"><span></span></button>' +
-    '<p class="bot-disclaimer">I only repeat the notes already on these pages. I am not Zoom, Talkdesk, Avaya, or any other vendor, and this chat is not official support.</p>' +
+    '<p class="bot-disclaimer">Cypher Monkey, a lifelong student and AI builder, wrote these notes. I only repeat the notes already on these pages. I am not Zoom, Talkdesk, Avaya, or any other vendor, and this chat is not official support.</p>' +
+    '<div data-ztabot></div>' +
     '<p class="bot-disclaimer">This is an independent, free, learning-only student project. It is not vendor documentation and not legal advice. Confirm version-specific steps in the cited guide before you change a live system.</p>' +
     '<div class="choice-row" data-choices></div>' +
     '<div class="bot-log" role="log" aria-live="polite"></div>' +
@@ -94,39 +95,19 @@
   function clearPhoneSheet() {
     panel.style.maxHeight = "";
     dock.style.maxHeight = "";
+    dock.style.height = "";
     if (dock.classList.contains("is-open")) {
       dock.style.top = "";
       dock.style.bottom = "";
     }
   }
-  function guardBottom() {
-    var guard = 0;
-    document.querySelectorAll("main h1, main .lede").forEach(function (el) {
-      var rect = el.getBoundingClientRect();
-      if (rect.width < 8 || rect.height < 8) return;
-      if (rect.bottom > guard) guard = rect.bottom;
-    });
-    return guard;
-  }
   function openPanel(flag) {
     panel.hidden = !flag;
     dock.classList.toggle("is-open", !!flag);
+    document.body.classList.toggle("guide-open", !!flag);
     monkey.setAttribute("aria-expanded", flag ? "true" : "false");
     if (flag) pose("cheer");
-    if (flag && isPhone()) {
-      var phone = document.querySelector(".phone-bar");
-      var phoneTop = phone ? phone.getBoundingClientRect().top : window.innerHeight;
-      var topLimit = Math.round(guardBottom() + 12);
-      var maxH = Math.max(140, phoneTop - 12 - topLimit);
-      panel.style.maxHeight = maxH + "px";
-      dock.style.maxHeight = maxH + "px";
-      dock.style.top = topLimit + "px";
-      dock.style.bottom = "auto";
-      dock.style.left = "8px";
-      dock.style.right = "8px";
-    } else {
-      clearPhoneSheet();
-    }
+    clearPhoneSheet();
   }
   document.querySelectorAll("[data-open-guide]").forEach(function (btn) {
     btn.addEventListener("click", function () {
@@ -465,6 +446,10 @@
   var botScript = document.createElement("script");
   botScript.src = base + "guide/dragbot.js";
   document.body.appendChild(botScript);
+  var chatScript = document.createElement("script");
+  chatScript.type = "module";
+  chatScript.src = base + "guide/chat-host.js";
+  document.body.appendChild(chatScript);
 
   var tour = document.createElement("div");
   tour.hidden = true;

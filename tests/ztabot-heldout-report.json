@@ -1,0 +1,165 @@
+{
+  "questions": 102,
+  "beginner": {
+    "total": 40,
+    "relevant": 36,
+    "relevantPct": 90,
+    "confidentWrong": 3,
+    "fallback": 0
+  },
+  "typo": {
+    "total": 15,
+    "relevant": 11,
+    "relevantPct": 73.3,
+    "confidentWrong": 1,
+    "fallback": 3
+  },
+  "offtopic": {
+    "total": 15,
+    "relevant": 15,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 15
+  },
+  "nav": {
+    "total": 10,
+    "relevant": 10,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 0
+  },
+  "inject": {
+    "total": 10,
+    "relevant": 10,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 10
+  },
+  "followTurns": {
+    "total": 12,
+    "relevant": 11,
+    "relevantPct": 91.7,
+    "confidentWrong": 0,
+    "fallback": 1
+  },
+  "followPairs": {
+    "ok": 5,
+    "total": 6
+  },
+  "target": {
+    "beginnerRelevantPct": 85,
+    "offtopicConfidentWrong": 0,
+    "injectConfidentWrong": 0
+  },
+  "misses": [
+    {
+      "id": "b10",
+      "group": "beginner",
+      "q": "what does this lab say about Zoom Virtual Agent and its license",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/licenses-named.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. Part of this note is unconfirmed. Licenses the pages actually name. License study starts with the sentence that names the license. There is one clear sentence in t"
+    },
+    {
+      "id": "b16",
+      "group": "beginner",
+      "q": "how does Aura differ from Infinity",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/from-avaya.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. Leaving Aura or moving toward Infinity. A move that starts on Aura can be a voice move, a contact-center move, or both. The pages you opened do not say those move "
+    },
+    {
+      "id": "b37",
+      "group": "beginner",
+      "q": "what is a SIP registration function for",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "rooms/sip-jobs.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. What SIP is for. Signaling and media are different jobs. SIP, in the RFC that opened, sets up the session. RTP, in RFC 3550, is the transport protocol for real-tim"
+    },
+    {
+      "id": "b38",
+      "group": "beginner",
+      "q": "why is a confirm row different from a cited page",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/transfer-confirm.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. Part of this note is unconfirmed. Transfer, conference, and what stays confirm. Students expect a transfer ladder. The honest version is short. Modifying a session"
+    },
+    {
+      "id": "t02",
+      "group": "typo",
+      "q": "explian rtp versus signling",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I only answer from this lab's lessons. You can also use Search."
+    },
+    {
+      "id": "t05",
+      "group": "typo",
+      "q": "infininty versus aura",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/from-avaya.html",
+      "mode": "answer",
+      "intent": "seed",
+      "text": "Checked 2026-10. Leaving Aura or moving toward Infinity. A move that starts on Aura can be a voice move, a contact-center move, or both. The pages you opened do not say those move "
+    },
+    {
+      "id": "t07",
+      "group": "typo",
+      "q": "virtul agnet licnse",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I only answer from this lab's lessons. You can also use Search."
+    },
+    {
+      "id": "t10",
+      "group": "typo",
+      "q": "workforse managment meanng",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I only answer from this lab's lessons. You can also use Search."
+    },
+    {
+      "id": "f04.2",
+      "group": "follow",
+      "pair": "f04",
+      "q": "what about the user grant",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I was still on “Talkdesk OAuth, account or user”, and that follow-up is not in these pages. I only answer from this lab's lessons. You can also use Search."
+    }
+  ]
+}

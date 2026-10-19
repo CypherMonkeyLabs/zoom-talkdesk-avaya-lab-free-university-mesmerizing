@@ -1,0 +1,29 @@
+{
+  "note": "Round 4 off-topic strings, written before the allowlist gate was scored. Everyday subjects, not the frozen held-out sets and not copied into seeds.",
+  "target": {
+    "offtopicConfidentWrong": 0
+  },
+  "questions": [
+    {"id": "r01", "group": "offtopic", "q": "how do I unclog a bathroom sink"},
+    {"id": "r02", "group": "offtopic", "q": "what size wrench fits a bicycle pedal"},
+    {"id": "r03", "group": "offtopic", "q": "when should I replace a furnace filter"},
+    {"id": "r04", "group": "offtopic", "q": "how many moons does jupiter have"},
+    {"id": "r05", "group": "offtopic", "q": "teach me a basic chess opening"},
+    {"id": "r06", "group": "offtopic", "q": "what is the boiling point of olive oil"},
+    {"id": "r07", "group": "offtopic", "q": "how to hem a pair of curtains"},
+    {"id": "r08", "group": "offtopic", "q": "which vaccine is due for a toddler"},
+    {"id": "r09", "group": "offtopic", "q": "how do I reset a tripped breaker"},
+    {"id": "r10", "group": "offtopic", "q": "best soil mix for indoor ferns"},
+    {"id": "r11", "group": "offtopic", "q": "how to parallel park on a hill"},
+    {"id": "r12", "group": "offtopic", "q": "what does a red sky at night mean"},
+    {"id": "r13", "group": "offtopic", "q": "how many strings are on a ukulele"},
+    {"id": "r14", "group": "offtopic", "q": "how to descale a coffee machine"},
+    {"id": "r15", "group": "offtopic", "q": "what is the speed limit on a german autobahn"},
+    {"id": "r16", "group": "offtopic", "q": "how to patch a hole in drywall"},
+    {"id": "r17", "group": "offtopic", "q": "when do humpback whales migrate"},
+    {"id": "r18", "group": "offtopic", "q": "how to fold a fitted bedsheet"},
+    {"id": "r19", "group": "offtopic", "q": "what is the freezing point of seawater"},
+    {"id": "r20", "group": "offtopic", "q": "how to replace a smoke detector battery"}
+  ],
+  "pairs": []
+}
