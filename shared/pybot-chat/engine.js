@@ -349,11 +349,13 @@ function typoKind(word, domain, syn, pool, freq) {
 
 const NEIGHBOUR_PRODUCT = /\b(?:genesys|five9|five 9|amazon connect|twilio|cxone|incontact|asterisk|webex|ringcentral|8x8|vonage|dialpad|ujet|alvaria)\b|\bmicrosoft teams\b|\bteams phone\b/;
 const CONSUMER_ZOOM = /\b(?:virtual background|meeting background|zoom background|gallery view|breakout rooms?|waiting room|personal meeting id|webinar)\b|\bblur(?:red)? background\b|\bzoom\b[\s\S]{0,48}\bbackground\b|\bbackground\b[\s\S]{0,48}\bzoom\b/;
+const HOUSEHOLD = /\b(?:recipe|recipes|rice|cook|cooking|bake|baking|soup|pizza|pasta|bread|cake|cookie|cookies|meal|meals|ingredient|ingredients|kitchen|breakfast|dinner|lunch|snack|food|shirt|shirts|pants|dress|dresses|shoe|shoes|jacket|jackets|sock|socks|hat|hats|clothing|clothes|sweater|jeans|skirt|coat|outfit|wardrobe|dog|dogs|puppy|puppies|cat|cats|kitten|kittens|pet|pets|goldfish|hamster|parrot)\b/;
 const LAB_STUDY = /\b(?:contact center|workplace|talkdesk|aura|infinity|srtp|sdp|oauth|ivr|wfm|crm|e911|cucm|ucce|siprec|sip|rtp)\b/;
 
 function outOfLab(q) {
   if (NEIGHBOUR_PRODUCT.test(q)) return true;
   if (CONSUMER_ZOOM.test(q) && !LAB_STUDY.test(q)) return true;
+  if (HOUSEHOLD.test(q) && !LAB_STUDY.test(q)) return true;
   return false;
 }
 

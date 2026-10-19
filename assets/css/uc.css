@@ -17,6 +17,10 @@ html[data-theme="aurora"] body.uc-lab {
     radial-gradient(640px 380px at 40% 100%, rgba(250, 204, 21, 0.16), transparent 46%),
     linear-gradient(180deg, #05030d 0%, #0b1024 46%, #1e1b4b 100%);
 }
+body.uc-lab h1,
+body.uc-lab h2,
+body.uc-lab h3,
+body.uc-lab h4 { font-family: "Canon Sans", system-ui, sans-serif; }
 body.uc-lab {
   margin: 0;
   background:
