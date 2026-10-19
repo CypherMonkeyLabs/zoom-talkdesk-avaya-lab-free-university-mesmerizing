@@ -347,6 +347,16 @@ function typoKind(word, domain, syn, pool, freq) {
   return kind;
 }
 
+const NEIGHBOUR_PRODUCT = /\b(?:genesys|five9|five 9|amazon connect|twilio|cxone|incontact|asterisk|webex|ringcentral|8x8|vonage|dialpad|ujet|alvaria)\b|\bmicrosoft teams\b|\bteams phone\b/;
+const CONSUMER_ZOOM = /\b(?:virtual background|meeting background|zoom background|gallery view|breakout rooms?|waiting room|personal meeting id|webinar)\b|\bblur(?:red)? background\b|\bzoom\b[\s\S]{0,48}\bbackground\b|\bbackground\b[\s\S]{0,48}\bzoom\b/;
+const LAB_STUDY = /\b(?:contact center|workplace|talkdesk|aura|infinity|srtp|sdp|oauth|ivr|wfm|crm|e911|cucm|ucce|siprec|sip|rtp)\b/;
+
+function outOfLab(q) {
+  if (NEIGHBOUR_PRODUCT.test(q)) return true;
+  if (CONSUMER_ZOOM.test(q) && !LAB_STUDY.test(q)) return true;
+  return false;
+}
+
 function hasDomainTerm(text, domain, syn, pool, freq) {
   const parts = normalize(text).split(" ").filter((word) => word && word.length >= 2 && !STOP.has(word) && !FILLER.has(word));
   if (!parts.length) return false;
@@ -824,6 +834,17 @@ export function createRetriever(index) {
     }
     const chat = smallTalk(q);
     if (chat) return chat;
+    if (outOfLab(q)) {
+      memory = null;
+      return emptyAnswer({
+        mode: "fallback",
+        intent: "fallback",
+        text: "I don't have that yet. I only answer from this lab's lessons. You can also use Search.",
+        follow: "Where do I start?",
+        followQ: "Where do I start?",
+        act: "search",
+      });
+    }
     if (memory && /^(?:please )?(?:(?:can|could) you )?(?:show|give)(?: me)?(?: a| an)? (?:short |small )?(?:example|sample)(?: of (?:that|it|this))?[. ]*$/.test(q)) {
       if (!memory.example) {
         return emptyAnswer({

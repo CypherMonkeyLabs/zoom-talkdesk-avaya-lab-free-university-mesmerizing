@@ -26,7 +26,7 @@
       "files": [
         {
           "path": "shared/pybot-chat/engine.js",
-          "sha256": "2631cb863e752f2b6a56a150917d41f50fd5b5804ae5b5d9cd87af946e703fa5"
+          "sha256": "8679abf897224b96aeae989e3662ffb0b152dcbadfedbb58ce1fe6ccb13b9e85"
         },
         {
           "path": "shared/pybot-chat/ui.js",

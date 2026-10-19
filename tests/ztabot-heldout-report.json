@@ -16,10 +16,10 @@
   },
   "offtopic": {
     "total": 15,
-    "relevant": 14,
-    "relevantPct": 93.3,
-    "confidentWrong": 1,
-    "fallback": 14
+    "relevant": 15,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 15
   },
   "nav": {
     "total": 10,
@@ -147,18 +147,6 @@
       "mode": "fallback",
       "intent": "fallback",
       "text": "I don't have that yet. I only answer from this lab's lessons. You can also use Search."
-    },
-    {
-      "id": "o14",
-      "group": "offtopic",
-      "q": "how does NICE CXone score a call",
-      "relevant": false,
-      "confidentWrong": true,
-      "clean": false,
-      "href": "rooms/siprec-qm.html",
-      "mode": "answer",
-      "intent": "",
-      "text": "Checked 2026-10. Recording architecture and quality scores. A recording file is the copy of the media. A quality score is a review of a call. Zoom's navigation lists Quality Manage"
     }
   ]
 }

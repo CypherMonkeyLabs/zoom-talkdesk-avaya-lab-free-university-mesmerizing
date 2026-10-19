@@ -1,0 +1,130 @@
+{
+  "questions": 102,
+  "beginner": {
+    "total": 40,
+    "relevant": 37,
+    "relevantPct": 92.5,
+    "confidentWrong": 3,
+    "fallback": 0
+  },
+  "typo": {
+    "total": 15,
+    "relevant": 14,
+    "relevantPct": 93.3,
+    "confidentWrong": 0,
+    "fallback": 1
+  },
+  "offtopic": {
+    "total": 15,
+    "relevant": 15,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 15
+  },
+  "nav": {
+    "total": 10,
+    "relevant": 10,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 0
+  },
+  "inject": {
+    "total": 10,
+    "relevant": 10,
+    "relevantPct": 100,
+    "confidentWrong": 0,
+    "fallback": 10
+  },
+  "followTurns": {
+    "total": 12,
+    "relevant": 10,
+    "relevantPct": 83.3,
+    "confidentWrong": 1,
+    "fallback": 1
+  },
+  "followPairs": {
+    "ok": 4,
+    "total": 6
+  },
+  "target": {
+    "beginnerRelevantPct": 85,
+    "offtopicConfidentWrong": 0,
+    "injectConfidentWrong": 0
+  },
+  "misses": [
+    {
+      "id": "b10",
+      "group": "beginner",
+      "q": "is Zoom Virtual Agent a CX product name in this lab",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/zoom-workplace.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. What Zoom Workplace names. Read the company and the product family as two layers. Wikipedia describes Zoom Communications, Inc., formerly Zoom Video Communications"
+    },
+    {
+      "id": "b13",
+      "group": "beginner",
+      "q": "what do Talkdesk synchronization names tell a student",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/crm-talkdesk.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. Talkdesk contact and agent sync. A real integration, in the sense this lab can defend, is a named API. Talkdesk names contact sync, agent sync, and a schedule impo"
+    },
+    {
+      "id": "b17",
+      "group": "beginner",
+      "q": "which sentences on the Infinity page is this lab willing to repeat",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/from-avaya.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. Leaving Aura or moving toward Infinity. A move that starts on Aura can be a voice move, a contact-center move, or both. The pages you opened do not say those move "
+    },
+    {
+      "id": "t01",
+      "group": "typo",
+      "q": "singalling versus rtp",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I only answer from this lab's lessons. You can also use Search."
+    },
+    {
+      "id": "f01.2",
+      "group": "follow",
+      "pair": "f01",
+      "q": "what about the media transport",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I was still on “What SIP is for”, and that follow-up is not in these pages. Closest pages: What SIP is for; RTP, SRTP, and delay words. I only answer from th"
+    },
+    {
+      "id": "f04.2",
+      "group": "follow",
+      "pair": "f04",
+      "q": "and the user one",
+      "relevant": false,
+      "confidentWrong": true,
+      "clean": false,
+      "href": "rooms/zoom-api-hour.html",
+      "mode": "answer",
+      "intent": "",
+      "text": "Checked 2026-10. Zoom API access, one hour at a time. Account-wide automation and a user-consented app are different grants. The page says OAuth uses an authorization code that you"
+    }
+  ]
+}

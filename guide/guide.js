@@ -95,6 +95,7 @@
   function clearPhoneSheet() {
     panel.style.maxHeight = "";
     dock.style.maxHeight = "";
+    dock.style.height = "";
     if (dock.classList.contains("is-open")) {
       dock.style.top = "";
       dock.style.bottom = "";
@@ -117,10 +118,15 @@
     if (flag && isPhone()) {
       var phone = document.querySelector(".phone-bar");
       var phoneTop = phone ? phone.getBoundingClientRect().top : window.innerHeight;
-      var topLimit = Math.round(guardBottom() + 12);
-      var maxH = Math.max(140, phoneTop - 12 - topLimit);
+      var header = document.querySelector(".uc-top");
+      var headerBottom = header ? header.getBoundingClientRect().bottom : 8;
+      var topLimit = Math.round(headerBottom + 8);
+      var underLede = Math.round(guardBottom() + 12);
+      if (window.innerHeight >= 700 && phoneTop - 12 - underLede >= 240) topLimit = underLede;
+      var maxH = Math.max(180, Math.round(phoneTop - 8 - topLimit));
       panel.style.maxHeight = maxH + "px";
       dock.style.maxHeight = maxH + "px";
+      dock.style.height = maxH + "px";
       dock.style.top = topLimit + "px";
       dock.style.bottom = "auto";
       dock.style.left = "8px";
