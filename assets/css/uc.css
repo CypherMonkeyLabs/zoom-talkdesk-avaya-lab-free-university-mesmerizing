@@ -810,9 +810,46 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
     padding-top: 0;
     overflow: hidden;
   }
+  body.guide-open .uc-top,
+  body.guide-open .canon-banner,
+  body.guide-open .phone-bar { display: none !important; }
+  body.guide-open .bot-dock.is-open {
+    top: 8px;
+    bottom: 8px;
+    height: auto;
+    max-height: none;
+  }
+  .bot-dock.is-open .bot-disclaimer {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    padding: 4px 48px 4px 8px;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    max-height: 2.8em;
+  }
+  .bot-dock.is-open .py-chat-try { display: none; }
+  .bot-dock.is-open .py-chat-examples,
+  .bot-dock.is-open .py-chat-chips {
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: 34px;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .bot-dock.is-open .py-chat .bp-chip {
+    flex: 0 0 auto;
+    min-height: 30px;
+    height: 30px;
+    padding: 0 8px;
+    font-size: 0.75rem;
+  }
   .bot-dock.is-open .py-chat-log {
     flex: 1 1 auto;
-    min-height: 28px;
+    min-height: 140px;
     max-height: none;
   }
   .bot-dock.is-open .py-chat-form { flex: 0 0 auto; position: relative; z-index: 4; }
@@ -839,14 +876,8 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
     padding: 4px 8px 6px;
   }
   .bot-dock.is-open .bot-disclaimer {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin: 0;
-    padding: 4px 40px 4px 6px;
+    padding-right: 40px;
     font-size: 0.72rem;
-    line-height: 1.25;
   }
   .bot-dock.is-open [data-ztabot] {
     flex: 1 1 auto;
@@ -863,7 +894,7 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
   }
   .bot-dock.is-open .py-chat-log {
     flex: 1 1 auto;
-    min-height: 24px;
+    min-height: 140px;
     max-height: none;
   }
   .bot-dock.is-open .py-chat-form { flex: 0 0 auto; }

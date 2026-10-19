@@ -49,6 +49,16 @@ test("chat answer quotes the SIP lesson", async ({ page }, info) => {
   const reply = page.locator(".py-msg-bot").last();
   await expect(reply).toContainText(/SIP/, { timeout: 10000 });
   await expect(reply.locator("a")).toHaveAttribute("href", /sip-jobs\.html/);
+  if (info.project.name === "phone" || short) {
+    const logHeight = await page.locator(".py-chat-log").evaluate((el) => el.getBoundingClientRect().height);
+    expect(logHeight).toBeGreaterThanOrEqual(120);
+  }
+  const inputAfter = await pointHits(page, "#py-chat-input");
+  const sendAfter = await pointHits(page, ".py-chat-form button[type=submit]");
+  expect(inputAfter.inView).toBe(true);
+  expect(sendAfter.inView).toBe(true);
+  expect(inputAfter.hit).toBe(true);
+  expect(sendAfter.hit).toBe(true);
   if (!short) {
     await page.screenshot({ path: path.join(shotDir, wide ? "bot-1440.png" : "bot-390.png") });
     await page.goto("/rooms/sip-jobs.html");

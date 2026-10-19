@@ -101,39 +101,13 @@
       dock.style.bottom = "";
     }
   }
-  function guardBottom() {
-    var guard = 0;
-    document.querySelectorAll("main h1, main .lede").forEach(function (el) {
-      var rect = el.getBoundingClientRect();
-      if (rect.width < 8 || rect.height < 8) return;
-      if (rect.bottom > guard) guard = rect.bottom;
-    });
-    return guard;
-  }
   function openPanel(flag) {
     panel.hidden = !flag;
     dock.classList.toggle("is-open", !!flag);
+    document.body.classList.toggle("guide-open", !!flag);
     monkey.setAttribute("aria-expanded", flag ? "true" : "false");
     if (flag) pose("cheer");
-    if (flag && isPhone()) {
-      var phone = document.querySelector(".phone-bar");
-      var phoneTop = phone ? phone.getBoundingClientRect().top : window.innerHeight;
-      var header = document.querySelector(".uc-top");
-      var headerBottom = header ? header.getBoundingClientRect().bottom : 8;
-      var topLimit = Math.round(headerBottom + 8);
-      var underLede = Math.round(guardBottom() + 12);
-      if (window.innerHeight >= 700 && phoneTop - 12 - underLede >= 240) topLimit = underLede;
-      var maxH = Math.max(180, Math.round(phoneTop - 8 - topLimit));
-      panel.style.maxHeight = maxH + "px";
-      dock.style.maxHeight = maxH + "px";
-      dock.style.height = maxH + "px";
-      dock.style.top = topLimit + "px";
-      dock.style.bottom = "auto";
-      dock.style.left = "8px";
-      dock.style.right = "8px";
-    } else {
-      clearPhoneSheet();
-    }
+    clearPhoneSheet();
   }
   document.querySelectorAll("[data-open-guide]").forEach(function (btn) {
     btn.addEventListener("click", function () {

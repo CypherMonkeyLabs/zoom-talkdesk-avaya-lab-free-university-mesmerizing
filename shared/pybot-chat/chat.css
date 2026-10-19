@@ -30,7 +30,7 @@
 .py-chat > .bp-link { flex: 0 0 auto; }
 .bp-scroll { overflow: auto; min-height: 0; flex: 1 1 auto; }
 .py-chat-log {
-  max-height: 112px;
+  max-height: 160px;
   min-height: 0;
   flex: 0 1 auto;
   overflow: auto;
@@ -84,7 +84,7 @@ html[data-theme="aurora"] .py-chat-form button[type="submit"] { background: #99f
   .py-chat-log { max-height: 168px; }
 }
 @media (max-width: 420px) {
-  .py-chat-log { max-height: 88px; }
+  .py-chat-log { max-height: none; }
   .py-chat-form button[type="submit"] { padding-inline: 8px; }
 }
 @media (max-height: 560px) {
