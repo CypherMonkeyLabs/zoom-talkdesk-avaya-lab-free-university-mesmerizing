@@ -1,0 +1,722 @@
+{
+  "schema": "lesson-map/1",
+  "note": "36 room lessons. Levels 0-10 follow track order (T1 is 0, T12 is clamped to 10). Outcomes are study aims for review. last_verified is null until a human re-checks each page.",
+  "levels": {
+    "0": "Zoom Workplace",
+    "1": "Zoom Contact Center",
+    "2": "Talkdesk",
+    "3": "Avaya Aura",
+    "4": "Avaya Infinity",
+    "5": "SIP and media",
+    "6": "Call flows",
+    "7": "WFM and recording",
+    "8": "E911 and analytics",
+    "9": "CRM and migration",
+    "10": "Licensing and roadmap"
+  },
+  "lessons": [
+    {
+      "key": "T1/zoom-workplace",
+      "title": "What Zoom Workplace names",
+      "level": 0,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “What Zoom Workplace names” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "zoom-workplace:0",
+        "zoom-workplace:1",
+        "zoom-workplace:2",
+        "zoom-workplace:3",
+        "zoom-workplace:4",
+        "zoom-workplace:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T1/zoom-phone-dev",
+      "title": "Zoom Phone developer paths",
+      "level": 0,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Zoom Phone developer paths” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "zoom-phone-dev:0",
+        "zoom-phone-dev:1",
+        "zoom-phone-dev:2",
+        "zoom-phone-dev:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T1/zoom-api-hour",
+      "title": "Zoom API access, one hour at a time",
+      "level": 0,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Zoom API access, one hour at a time” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "zoom-api-hour:0",
+        "zoom-api-hour:1",
+        "zoom-api-hour:2",
+        "zoom-api-hour:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T2/cc-agents",
+      "title": "Agents and consumers",
+      "level": 1,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Agents and consumers” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "cc-agents:0",
+        "cc-agents:1",
+        "cc-agents:2",
+        "cc-agents:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T2/cc-embed",
+      "title": "Three ways to put Contact Center in an app",
+      "level": 1,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Three ways to put Contact Center in an app” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "cc-embed:0",
+        "cc-embed:1",
+        "cc-embed:2",
+        "cc-embed:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T2/virtual-agent",
+      "title": "Zoom Virtual Agent, and the license line",
+      "level": 1,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Zoom Virtual Agent, and the license line” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "virtual-agent:0",
+        "virtual-agent:1",
+        "virtual-agent:2",
+        "virtual-agent:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T3/talkdesk-cloud",
+      "title": "Talkdesk as a cloud contact center",
+      "level": 2,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Talkdesk as a cloud contact center” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "talkdesk-cloud:0",
+        "talkdesk-cloud:1",
+        "talkdesk-cloud:2",
+        "talkdesk-cloud:3",
+        "talkdesk-cloud:4",
+        "talkdesk-cloud:5",
+        "talkdesk-cloud:6"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T3/talkdesk-oauth",
+      "title": "Talkdesk OAuth, account or user",
+      "level": 2,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Talkdesk OAuth, account or user” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "talkdesk-oauth:0",
+        "talkdesk-oauth:1",
+        "talkdesk-oauth:2",
+        "talkdesk-oauth:3",
+        "talkdesk-oauth:4",
+        "talkdesk-oauth:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T3/talkdesk-sync",
+      "title": "Connections, contacts, and agents",
+      "level": 2,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Connections, contacts, and agents” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "talkdesk-sync:0",
+        "talkdesk-sync:1",
+        "talkdesk-sync:2",
+        "talkdesk-sync:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T4/aura-named",
+      "title": "Avaya Aura on the page that opened",
+      "level": 3,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Avaya Aura on the page that opened” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "aura-named:0",
+        "aura-named:1",
+        "aura-named:2",
+        "aura-named:3",
+        "aura-named:4",
+        "aura-named:5",
+        "aura-named:6",
+        "aura-named:7"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T4/aura-docs",
+      "title": "Where Avaya technical pages live",
+      "level": 3,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Where Avaya technical pages live” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "aura-docs:0",
+        "aura-docs:1",
+        "aura-docs:2",
+        "aura-docs:3",
+        "aura-docs:4",
+        "aura-docs:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T4/aura-versus-infinity",
+      "title": "Voice platform and CX platform",
+      "level": 3,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Voice platform and CX platform” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "aura-versus-infinity:0",
+        "aura-versus-infinity:1",
+        "aura-versus-infinity:2",
+        "aura-versus-infinity:3",
+        "aura-versus-infinity:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T5/infinity-lines",
+      "title": "Lines on the Infinity page",
+      "level": 4,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Lines on the Infinity page” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "infinity-lines:0",
+        "infinity-lines:1",
+        "infinity-lines:2",
+        "infinity-lines:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T5/experience-platform-name",
+      "title": "Experience Platform and the redirect",
+      "level": 4,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Experience Platform and the redirect” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "experience-platform-name:0",
+        "experience-platform-name:1",
+        "experience-platform-name:2",
+        "experience-platform-name:3",
+        "experience-platform-name:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T5/avaya-ai-hooks",
+      "title": "Future hooks on Avaya's own site",
+      "level": 4,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Future hooks on Avaya's own site” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "avaya-ai-hooks:0",
+        "avaya-ai-hooks:1",
+        "avaya-ai-hooks:2",
+        "avaya-ai-hooks:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T6/sip-jobs",
+      "title": "What SIP is for",
+      "level": 5,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “What SIP is for” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "sip-jobs:0",
+        "sip-jobs:1",
+        "sip-jobs:2",
+        "sip-jobs:3",
+        "sip-jobs:4",
+        "sip-jobs:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T6/offer-answer",
+      "title": "Offer, answer, and SDP",
+      "level": 5,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Offer, answer, and SDP” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "offer-answer:0",
+        "offer-answer:1",
+        "offer-answer:2",
+        "offer-answer:3",
+        "offer-answer:4",
+        "offer-answer:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T6/rtp-and-srtp",
+      "title": "RTP, SRTP, and delay words",
+      "level": 5,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “RTP, SRTP, and delay words” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "rtp-and-srtp:0",
+        "rtp-and-srtp:1",
+        "rtp-and-srtp:2",
+        "rtp-and-srtp:3",
+        "rtp-and-srtp:4",
+        "rtp-and-srtp:5",
+        "rtp-and-srtp:6"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T7/ladder-sketch",
+      "title": "A ladder you are allowed to draw",
+      "level": 6,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “A ladder you are allowed to draw” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "ladder-sketch:0",
+        "ladder-sketch:1",
+        "ladder-sketch:2",
+        "ladder-sketch:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T7/routing-words",
+      "title": "Routing words that survived contact",
+      "level": 6,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Routing words that survived contact” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "routing-words:0",
+        "routing-words:1",
+        "routing-words:2",
+        "routing-words:3",
+        "routing-words:4",
+        "routing-words:5",
+        "routing-words:6"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T7/transfer-confirm",
+      "title": "Transfer, conference, and what stays confirm",
+      "level": 6,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Transfer, conference, and what stays confirm” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "transfer-confirm:0",
+        "transfer-confirm:1",
+        "transfer-confirm:2",
+        "transfer-confirm:3",
+        "transfer-confirm:4",
+        "transfer-confirm:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T8/wfm-word",
+      "title": "Workforce management, the general word",
+      "level": 7,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Workforce management, the general word” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "wfm-word:0",
+        "wfm-word:1",
+        "wfm-word:2",
+        "wfm-word:3",
+        "wfm-word:4",
+        "wfm-word:5",
+        "wfm-word:6"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T8/talkdesk-wfm-api",
+      "title": "Talkdesk schedule and forecast imports",
+      "level": 7,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Talkdesk schedule and forecast imports” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "talkdesk-wfm-api:0",
+        "talkdesk-wfm-api:1",
+        "talkdesk-wfm-api:2",
+        "talkdesk-wfm-api:3",
+        "talkdesk-wfm-api:4",
+        "talkdesk-wfm-api:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T8/siprec-qm",
+      "title": "Recording architecture and quality scores",
+      "level": 7,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Recording architecture and quality scores” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "siprec-qm:0",
+        "siprec-qm:1",
+        "siprec-qm:2",
+        "siprec-qm:3",
+        "siprec-qm:4",
+        "siprec-qm:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T9/e911-words",
+      "title": "E911 words from the pages that opened",
+      "level": 8,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “E911 words from the pages that opened” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "e911-words:0",
+        "e911-words:1",
+        "e911-words:2",
+        "e911-words:3",
+        "e911-words:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T9/analytics-names",
+      "title": "Analytics names, not fake charts",
+      "level": 8,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Analytics names, not fake charts” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "analytics-names:0",
+        "analytics-names:1",
+        "analytics-names:2",
+        "analytics-names:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T9/numbers-confirm",
+      "title": "Numbers you may repeat, and numbers you may not",
+      "level": 8,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Numbers you may repeat, and numbers you may not” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "numbers-confirm:0",
+        "numbers-confirm:1",
+        "numbers-confirm:2",
+        "numbers-confirm:3",
+        "numbers-confirm:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T10/crm-zoom",
+      "title": "CRM calling on the Zoom Phone page",
+      "level": 9,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “CRM calling on the Zoom Phone page” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "crm-zoom:0",
+        "crm-zoom:1",
+        "crm-zoom:2",
+        "crm-zoom:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T10/crm-talkdesk",
+      "title": "Talkdesk contact and agent sync",
+      "level": 9,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Talkdesk contact and agent sync” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "crm-talkdesk:0",
+        "crm-talkdesk:1",
+        "crm-talkdesk:2",
+        "crm-talkdesk:3",
+        "crm-talkdesk:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T10/ai-agents",
+      "title": "AI agents across three vendors",
+      "level": 9,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “AI agents across three vendors” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "ai-agents:0",
+        "ai-agents:1",
+        "ai-agents:2",
+        "ai-agents:3",
+        "ai-agents:4",
+        "ai-agents:5",
+        "ai-agents:6"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T11/migration-habit",
+      "title": "A migration habit that does not invent a cutover",
+      "level": 10,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “A migration habit that does not invent a cutover” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "migration-habit:0",
+        "migration-habit:1",
+        "migration-habit:2",
+        "migration-habit:3",
+        "migration-habit:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T11/from-avaya",
+      "title": "Leaving Aura or moving toward Infinity",
+      "level": 10,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Leaving Aura or moving toward Infinity” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "from-avaya:0",
+        "from-avaya:1",
+        "from-avaya:2",
+        "from-avaya:3",
+        "from-avaya:4",
+        "from-avaya:5"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T11/cucm-ucce-gap",
+      "title": "CUCM and UCCE when Cisco did not open",
+      "level": 10,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “CUCM and UCCE when Cisco did not open” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "cucm-ucce-gap:0",
+        "cucm-ucce-gap:1",
+        "cucm-ucce-gap:2",
+        "cucm-ucce-gap:3",
+        "cucm-ucce-gap:4",
+        "cucm-ucce-gap:5",
+        "cucm-ucce-gap:6",
+        "cucm-ucce-gap:7",
+        "cucm-ucce-gap:8",
+        "cucm-ucce-gap:9",
+        "cucm-ucce-gap:10",
+        "cucm-ucce-gap:11"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T12/licenses-named",
+      "title": "Licenses the pages actually name",
+      "level": 10,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Licenses the pages actually name” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "licenses-named:0",
+        "licenses-named:1",
+        "licenses-named:2",
+        "licenses-named:3",
+        "licenses-named:4",
+        "licenses-named:5",
+        "licenses-named:6"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T12/certifications-confirm",
+      "title": "Certifications you still have to open",
+      "level": 10,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Certifications you still have to open” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "certifications-confirm:0",
+        "certifications-confirm:1",
+        "certifications-confirm:2",
+        "certifications-confirm:3"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    },
+    {
+      "key": "T12/roadmap-confirm",
+      "title": "Roadmap, timelines, and the check date",
+      "level": 10,
+      "minutes": 12,
+      "outcomes": [
+        "Name the subject of “Roadmap, timelines, and the check date” in this lab's own words",
+        "Leave a confirm row unconfirmed instead of filling a gap"
+      ],
+      "sources": [
+        "roadmap-confirm:0",
+        "roadmap-confirm:1",
+        "roadmap-confirm:2",
+        "roadmap-confirm:3",
+        "roadmap-confirm:4"
+      ],
+      "has_exercise": true,
+      "last_verified": null
+    }
+  ]
+}

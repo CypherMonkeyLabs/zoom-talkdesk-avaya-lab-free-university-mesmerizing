@@ -1,0 +1,50 @@
+{
+  "components": [
+    {
+      "name": "Outfit",
+      "version": "2021",
+      "licence": "SIL Open Font License 1.1",
+      "url": "https://github.com/Outfitio/Outfit-Fonts",
+      "licence_file": "assets/fonts/Outfit-OFL.txt",
+      "files": [
+        {
+          "path": "assets/fonts/outfit-latin.woff2",
+          "sha256": "3a462c85b910c74e32c9cfaa5a1906c72043606f7bff6f6ff90a7de06468d20c"
+        },
+        {
+          "path": "assets/fonts/Outfit-OFL.txt",
+          "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+        }
+      ]
+    },
+    {
+      "name": "Lab chat",
+      "version": "2026-10-zta",
+      "licence": "MIT",
+      "url": "https://github.com/CypherMonkeyLabs/python-lab-free-university-mesmerizing",
+      "licence_file": "shared/pybot-chat/LICENSE.txt",
+      "files": [
+        {
+          "path": "shared/pybot-chat/engine.js",
+          "sha256": "2631cb863e752f2b6a56a150917d41f50fd5b5804ae5b5d9cd87af946e703fa5"
+        },
+        {
+          "path": "shared/pybot-chat/ui.js",
+          "sha256": "071951475e4f78810028dc8d6a69848ccd0fee3fb881d0f2d48cf43be57c54c3"
+        },
+        {
+          "path": "shared/pybot-chat/chat.css",
+          "sha256": "8082792a3349f94718f0477691dd73f860ea54266c2ac2e160cfb2ffa18e3f6b"
+        },
+        {
+          "path": "shared/pybot-chat/README.md",
+          "sha256": "97ad63f9626d415b113319f391055987059c8d0cb12f8a26fe0433d92e8dec94"
+        },
+        {
+          "path": "shared/pybot-chat/LICENSE.txt",
+          "sha256": "b375d8d29a2c111b80078fc94c648fd2130a6df3414d925bd70e2395c0f48529"
+        }
+      ]
+    }
+  ]
+}

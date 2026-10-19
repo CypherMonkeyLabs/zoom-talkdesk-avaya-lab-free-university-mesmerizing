@@ -1,0 +1,13 @@
+{
+  "$comment": "Front matter for the 36 room lessons. Checked by scripts/validate_lessons.mjs.",
+  "required": ["key", "title", "level", "outcomes", "sources", "last_verified"],
+  "properties": {
+    "key": "string, 'T<n>/<room slug>', must match assets/data/catalog.json",
+    "title": "string, must equal the catalog title and the room h1",
+    "level": "integer 0-10",
+    "outcomes": "array of at least one phrase, each at least 8 characters",
+    "sources": "array of ids that exist in rooms/sources/<slug>/sources.json",
+    "last_verified": "null or YYYY-MM-DD",
+    "has_exercise": "boolean, optional"
+  }
+}

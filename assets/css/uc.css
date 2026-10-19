@@ -644,6 +644,14 @@ html[data-theme="aurora"] .go-deeper { background: #042f2e; color: #ecfeff; bord
   border: 2px solid #fff;
 }
 .bot-form { display: flex; gap: 6px; position: sticky; bottom: 0; background: #fff; padding-top: 6px; z-index: 2; }
+.bot-form[hidden] { display: none !important; }
+.bot-panel .py-chat-form {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  background: #fff;
+  padding-top: 6px;
+}
 .bot-form input {
   flex: 1;
   min-width: 7.5rem;
@@ -722,7 +730,7 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
   .hero-band { grid-template-columns: 1fr; }
   .hero-diagram { margin-right: 0; }
   .track-map { padding-bottom: 130px; }
-  body.uc-lab main { padding-right: 72px; }
+  body.uc-lab main { padding-right: 16px; }
   body.uc-lab main .lede { padding-right: 0; }
   .room-downloads { padding-right: 4px; }
   .site-drawer { padding-bottom: 120px; }
@@ -754,8 +762,9 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
     left: 8px;
     right: 8px;
     width: auto;
-    max-height: 60vh;
-    bottom: calc(104px + env(safe-area-inset-bottom));
+    z-index: 97;
+    max-height: min(70vh, calc(100dvh - 150px));
+    bottom: calc(112px + env(safe-area-inset-bottom));
     overflow: hidden;
   }
   .bot-dock.is-open .monkey-btn {
@@ -765,8 +774,11 @@ main, .wrap, .go-deeper, .lede, .go-deeper a, .go-deeper li {
     width: 58px;
     height: 68px;
     margin: 0;
+    z-index: 2;
   }
-  .bot-dock.is-open .bot-panel { flex: 1; min-height: 0; max-height: none; margin-top: 0; padding-top: 6px; }
+  .bot-dock.is-open .bot-panel > .bot-disclaimer:first-of-type { padding-right: 64px; }
+  .bot-dock.is-open .bot-panel > p.bot-disclaimer:last-of-type { display: none; }
+  .bot-dock.is-open .bot-panel { flex: 1 1 auto; min-height: 0; max-height: none; margin-top: 0; padding-top: 6px; }
   .bot-dock.is-open .choice-row { margin-top: 34px; }
   .bot-dock.is-open .sheet-handle { min-height: 44px; justify-content: flex-start; padding-left: 12px; }
   .bot-dock:not(.is-open) .bot-panel { display: none; }

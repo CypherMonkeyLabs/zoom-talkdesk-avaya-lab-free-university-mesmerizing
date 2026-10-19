@@ -158,8 +158,25 @@
   });
 
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
-    navigator.serviceWorker.register(fromRoot("sw.js")).catch(function () { /* file or private mode */ });
+    navigator.serviceWorker.register(fromRoot("sw.js"), { scope: rootPrefix || "./" }).catch(function () { /* file or private mode */ });
   }
+  function addAsset(kind, href) {
+    if (kind === "css") {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = fromRoot(href);
+      document.head.appendChild(link);
+      return;
+    }
+    var script = document.createElement("script");
+    script.src = fromRoot(href);
+    document.body.appendChild(script);
+  }
+  addAsset("css", "assets/css/studio.css");
+  addAsset("css", "shared/pybot-chat/chat.css");
+  addAsset("js", "assets/js/pwa.js");
+  addAsset("js", "assets/js/studio.js");
+  addAsset("js", "assets/js/tryit.js");
 
   function motionOff() {
     if (document.documentElement.getAttribute("data-motion") === "reduce") return true;

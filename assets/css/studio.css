@@ -1,0 +1,114 @@
+/* Depth, aurora, study scenes, try-it cards, and the call-flow simulation. */
+.hero-band { position: relative; }
+.aurora {
+  position: absolute;
+  inset: -8% -6% auto;
+  height: 70%;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 20% 40%, rgba(94, 234, 212, 0.55), transparent 55%),
+    radial-gradient(ellipse at 70% 30%, rgba(167, 139, 250, 0.45), transparent 50%),
+    radial-gradient(ellipse at 40% 80%, rgba(251, 191, 36, 0.28), transparent 45%);
+  filter: blur(8px);
+  z-index: 0;
+  animation: aurora-drift 14s ease-in-out infinite alternate;
+}
+.hero-band > div { position: relative; z-index: 1; }
+.aurora.is-still, .aurora { }
+@keyframes aurora-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(2%, -2%, 0) scale(1.04); }
+}
+.study-worlds { margin-top: 12px; }
+.world-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  perspective: 800px;
+}
+.world-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 96px;
+  padding: 14px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #042f2e;
+  background: linear-gradient(160deg, #ccfbf1, #e0e7ff);
+  border: 2px solid #0f766e;
+  transform: rotateX(8deg) translateZ(0);
+  box-shadow: 0 10px 0 #115e59;
+}
+.world-card strong { font-size: 1rem; }
+.world-card span { color: #134e4a; }
+html[data-theme="aurora"] .world-card {
+  color: #ecfeff;
+  background: linear-gradient(160deg, #134e4a, #1e1b4b);
+  border-color: #5eead4;
+  box-shadow: 0 10px 0 #042f2e;
+}
+html[data-theme="aurora"] .world-card span { color: #99f6e4; }
+.tryit, .sim-card {
+  margin: 18px 0;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #0f766e;
+  background: #f0fdfa;
+  color: #042f2e;
+}
+html[data-theme="aurora"] .tryit,
+html[data-theme="aurora"] .sim-card {
+  background: #042f2e;
+  color: #ecfeff;
+  border-color: #5eead4;
+}
+.tryit-row, .sim-nodes { display: flex; flex-wrap: wrap; gap: 8px; }
+.tryit button, .sim-card button, .sim-card input, #pwa-install-btn {
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 2px solid #0f766e;
+  background: #ffffff;
+  color: #042f2e;
+  font: inherit;
+}
+html[data-theme="aurora"] .tryit button,
+html[data-theme="aurora"] .sim-card button,
+html[data-theme="aurora"] .sim-card input {
+  background: #0f172a;
+  color: #ecfeff;
+  border-color: #5eead4;
+}
+.sim-card input { min-width: 8ch; }
+.sim-result {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #042f2e;
+  color: #ecfeff;
+  font-family: ui-monospace, monospace;
+  white-space: pre-wrap;
+}
+.sim-badge {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fde68a;
+  color: #1c1917;
+  font-weight: 700;
+}
+:focus-visible {
+  outline: 3px solid #0f766e;
+  outline-offset: 2px;
+}
+@media (max-width: 420px) {
+  .world-row { grid-template-columns: 1fr; }
+  .world-card { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aurora { animation: none; }
+  .world-card { transform: none; transition: none; }
+  .hero-diagram { transform: none !important; }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "zta-lab",
+  "private": true,
+  "type": "module",
+  "description": "Offline checks for the Zoom, Talkdesk, and Avaya lab.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.1"
+  }
+}
