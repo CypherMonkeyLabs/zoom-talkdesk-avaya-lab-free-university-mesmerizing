@@ -21,6 +21,9 @@ const required = [
   "guide/dragbot.js",
   "guide/chat-host.js",
   "assets/js/frame.js",
+  "assets/js/theme-boot.js",
+  "assets/js/play-drill.js",
+  "assets/js/play-sim.js",
   "assets/js/university.js",
   "assets/js/pwa.js",
   "assets/js/studio.js",
@@ -63,6 +66,6 @@ if (!sw.includes("const SHELL_ASSETS = [")) {
   process.exit(1);
 }
 sw = sw.replace(/const SHELL_ASSETS = \[[\s\S]*?\];/, `const SHELL_ASSETS = [\n  "./",\n${body}\n];`);
-sw = sw.replace(/zta-lab-pwa-v\d+/, "zta-lab-pwa-v4");
+sw = sw.replace(/zta-lab-pwa-v\d+/, "zta-lab-pwa-v5");
 fs.writeFileSync(swPath, sw);
 console.log(`precache ${chosen.length + 1} files, ${total} bytes, budget ${budget}`);

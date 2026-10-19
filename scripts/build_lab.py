@@ -9,6 +9,12 @@ from facts import ROOMS, SOURCES, TRACKS
 
 ROOT = Path(__file__).resolve().parents[1]
 BRAND = "https://cyphermonkeylabs.com"
+CSP = (
+    "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
+    "img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self' data:; "
+    "connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; "
+    "form-action 'self'"
+)
 REPO = "https://github.com/CypherMonkeyLabs"
 TREE = "https://linktr.ee/cypherMonkey"
 
@@ -143,12 +149,13 @@ def chrome_open(title, desc, depth, current):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="{CSP}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)} · Zoom Talkdesk Avaya Lab</title>
 <meta name="description" content="{e(desc)}">
 <link rel="icon" href="{p}favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="{p}manifest.webmanifest">
-<script>try{{var t=localStorage.getItem("canon-theme");if(t!=="aurora")t="bloom";document.documentElement.dataset.theme=t;var f=localStorage.getItem("canon-font");if(f==="sm"||f==="lg")document.documentElement.dataset.font=f;var ink=localStorage.getItem("canon-ink");if(ink&&/^#[0-9a-f]{{6}}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);}}catch(err){{document.documentElement.dataset.theme="bloom";}}</script>
+<script src="{p}assets/js/theme-boot.js"></script>
 <link rel="stylesheet" href="{p}assets/css/canon.css"><link rel="stylesheet" href="{p}assets/css/shell.css"><link rel="stylesheet" href="{p}assets/css/wow.css"><link rel="stylesheet" href="{p}assets/css/frame.css"><link rel="stylesheet" href="{p}assets/css/polish.css"><link rel="stylesheet" href="{p}assets/css/footer.css"><link rel="stylesheet" href="{p}assets/css/university.css"><link rel="stylesheet" href="{p}assets/css/uc.css">
 <link rel="stylesheet" href="{p}guide/guide.css">
 </head>
@@ -352,7 +359,9 @@ def build_rooms():
         md += ["", room["example"], ""]
         write(f"downloads/rooms/{slug}.md", "\n".join(md) + "\n")
         sheet = (
-            "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>"
+            "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">"
+            + f'<meta http-equiv="Content-Security-Policy" content="{CSP}">'
+            + "<title>"
             + e(room["title"])
             + "</title><link rel=\"stylesheet\" href=\"../../assets/css/footer.css\">"
             + "<style>body{font-family:system-ui,sans-serif;margin:24px;background:#f8fafc;color:#0f172a}ul{font-size:1.05rem;line-height:1.5}</style></head><body>"
@@ -500,41 +509,21 @@ def build_hubs():
 <section><h2>What correct means</h2>
 <p>The drill asks for registration and session setup before RTP, because RFC 3261 separates the registration function and the session from RTP in RFC 3550. A Zoom token hour is an API fact, not a call-flow step, so it stays off this list.</p>
 </section>
-<script>
-(function(){
-  var jobs=["RTP media","SIP session setup","Registration","Quality score is not the file"];
-  var want=["Registration","SIP session setup","RTP media","Quality score is not the file"];
-  var list=document.getElementById("order");
-  jobs.forEach(function(job,i){
-    var li=document.createElement("li");
-    li.textContent=job;
-    li.draggable=true;
-    li.dataset.job=job;
-    li.style.padding="8px";
-    li.style.margin="6px 0";
-    li.style.border="2px solid #0f766e";
-    li.style.borderRadius="12px";
-    li.addEventListener("dragstart",function(){li.classList.add("dragging");});
-    li.addEventListener("dragend",function(){li.classList.remove("dragging");});
-    list.appendChild(li);
-  });
-  list.addEventListener("dragover",function(ev){
-    ev.preventDefault();
-    var dragging=list.querySelector(".dragging");
-    var after=[].slice.call(list.children).find(function(child){
-      var box=child.getBoundingClientRect();
-      return ev.clientY < box.top + box.height/2;
-    });
-    if(!dragging) return;
-    if(after) list.insertBefore(dragging, after); else list.appendChild(dragging);
-  });
-  document.getElementById("check-order").addEventListener("click",function(){
-    var got=[].map.call(list.children,function(li){return li.dataset.job;});
-    var ok=got.every(function(item,i){return item===want[i];});
-    document.getElementById("play-note").textContent=ok?"That order matches the study habit.":"Not yet. Registration, then session setup, then RTP. The score is a different object.";
-  });
-})();
-</script>
+<script src="assets/js/play-drill.js"></script>
+<section class="sim-card" id="sim" aria-labelledby="sim-title">
+<p class="sim-badge">Simulation</p>
+<h2 id="sim-title">Call-flow sketch</h2>
+<p>Click a node, type the digits the caller pressed, and read a SIP sketch. This page did not call Zoom, Talkdesk, Avaya, or any carrier. The sketch is not run on a network.</p>
+<div class="sim-nodes" role="group" aria-label="Call nodes">
+<button type="button" data-node="ivr" aria-pressed="true">IVR</button>
+<button type="button" data-node="queue" aria-pressed="false">Queue</button>
+<button type="button" data-node="agent" aria-pressed="false">Agent</button>
+</div>
+<p><label>Digits <input id="sim-digits" inputmode="numeric" maxlength="4" value="1" aria-label="Digits the caller pressed"></label></p>
+<button type="button" id="sim-run">Show the sketch</button>
+<pre class="sim-result" id="sim-out" aria-live="polite">Choose a node, then show the sketch.</pre>
+</section>
+<script src="assets/js/play-sim.js"></script>
 </div>'''
     page("play.html", "Play", "A short drill in this browser.", 0, "play.html", play)
 
@@ -676,7 +665,9 @@ def build_hubs():
         f"<article><h2>{e(c['front'])}</h2><p>{e(c['back'])}</p><p>Source: {e(c['source'])}</p></article>" for c in cards
     )
     write("downloads/flashcards.html",
-          "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Flashcards</title>"
+          "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">"
+          + f'<meta http-equiv="Content-Security-Policy" content="{CSP}">'
+          + "<title>Flashcards</title>"
           "<link rel=\"stylesheet\" href=\"../assets/css/footer.css\">"
           "<style>body{font-family:system-ui,sans-serif;margin:24px}article{border:1px solid #99f6e4;border-radius:12px;padding:12px;margin:8px 0}</style></head><body>"
           f"<h1>Flashcards</h1><p class=\"lede\">Terms from the lessons.</p>{card_html}"

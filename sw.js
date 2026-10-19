@@ -2,7 +2,7 @@
    The page registers it with a scope of that same directory, so on
    https://cyphermonkeylabs.com/zoom-talkdesk-avaya-lab-free-university-mesmerizing/
    the worker covers that folder only. */
-const CACHE_NAME = "zta-lab-pwa-v4";
+const CACHE_NAME = "zta-lab-pwa-v5";
 const CACHE_BUDGET_NOTE = "Precache stays under 3.5 MB. The chat engine and index are included. The notes zip is not.";
 const SHELL_ASSETS = [
   "./",
@@ -22,6 +22,9 @@ const SHELL_ASSETS = [
   "./guide/dragbot.js",
   "./guide/chat-host.js",
   "./assets/js/frame.js",
+  "./assets/js/theme-boot.js",
+  "./assets/js/play-drill.js",
+  "./assets/js/play-sim.js",
   "./assets/js/university.js",
   "./assets/js/pwa.js",
   "./assets/js/studio.js",
