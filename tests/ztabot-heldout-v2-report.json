@@ -39,8 +39,8 @@
     "total": 12,
     "relevant": 10,
     "relevantPct": 83.3,
-    "confidentWrong": 1,
-    "fallback": 1
+    "confidentWrong": 0,
+    "fallback": 2
   },
   "followPairs": {
     "ok": 4,
@@ -119,12 +119,12 @@
       "pair": "f04",
       "q": "and the user one",
       "relevant": false,
-      "confidentWrong": true,
+      "confidentWrong": false,
       "clean": false,
-      "href": "rooms/zoom-api-hour.html",
-      "mode": "answer",
-      "intent": "",
-      "text": "Checked 2026-10. Zoom API access, one hour at a time. Account-wide automation and a user-consented app are different grants. The page says OAuth uses an authorization code that you"
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I was still on “Talkdesk OAuth, account or user”, and that follow-up is not in these pages. I only answer from this lab's lessons. You can also use Search."
     }
   ]
 }

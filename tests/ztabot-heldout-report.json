@@ -37,13 +37,13 @@
   },
   "followTurns": {
     "total": 12,
-    "relevant": 12,
-    "relevantPct": 100,
+    "relevant": 11,
+    "relevantPct": 91.7,
     "confidentWrong": 0,
-    "fallback": 0
+    "fallback": 1
   },
   "followPairs": {
-    "ok": 6,
+    "ok": 5,
     "total": 6
   },
   "target": {
@@ -147,6 +147,19 @@
       "mode": "fallback",
       "intent": "fallback",
       "text": "I don't have that yet. I only answer from this lab's lessons. You can also use Search."
+    },
+    {
+      "id": "f04.2",
+      "group": "follow",
+      "pair": "f04",
+      "q": "what about the user grant",
+      "relevant": false,
+      "confidentWrong": false,
+      "clean": false,
+      "href": "",
+      "mode": "fallback",
+      "intent": "fallback",
+      "text": "I don't have that yet. I was still on “Talkdesk OAuth, account or user”, and that follow-up is not in these pages. I only answer from this lab's lessons. You can also use Search."
     }
   ]
 }

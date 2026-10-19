@@ -359,6 +359,49 @@ function outOfLab(q) {
   return false;
 }
 
+const LEX_SYN = { signalling: "signaling", licence: "license", licences: "license", realtime: "rtp", oauth2: "oauth" };
+const LEXICON_PHRASES = [
+  "contact center", "zoom workplace", "zoom phone", "zoom cx", "virtual agent", "smart embed",
+  "server to server", "client credentials", "authorization code", "contact synchronization",
+  "avaya aura", "avaya infinity", "ip office", "experience platform", "offer answer", "screen pop",
+  "session modify", "advanced dialer", "workforce management", "call flow", "quality score",
+  "named license", "crm calling", "schedule import", "forecast import", "partner app",
+];
+const LEXICON_WORDS = new Set([
+  "zoom", "workplace", "talkdesk", "avaya", "aura", "infinity", "cisco", "cucm", "ucce",
+  "sip", "sdp", "rtp", "srtp", "siprec", "oauth", "e911", "e112", "crm", "wfm",
+  "cti", "ccaas", "hris", "sku", "qm", "rfc", "onecloud", "appconnect",
+  "agent", "consumer", "embed", "callback", "license", "virtual", "credential", "authorization",
+  "synchronization", "sync", "connection", "documentation", "tandem", "modernization", "roadmap",
+  "forecast", "schedule", "recording", "architecture", "quality", "score", "analytics", "insight",
+  "migration", "cutover", "certification", "signaling", "media", "transfer", "conference",
+  "routing", "route", "workforce", "redirect", "voice", "phone", "api",
+  "developer", "ladder", "dialer", "confirm", "calling", "timeline",
+  "number", "session",
+]);
+const LEXICON_POOL = [...LEXICON_WORDS];
+
+function lexiconToken(raw) {
+  if (!raw) return false;
+  if (LEXICON_WORDS.has(raw)) return true;
+  const term = canon(raw, LEX_SYN);
+  if (term && LEXICON_WORDS.has(term)) return true;
+  if (raw.length < 4 || STOP.has(raw) || FILLER.has(raw)) return false;
+  const max = raw.length >= 8 ? 2 : 1;
+  if (fuzzy(raw, LEXICON_POOL, max)) return true;
+  if (term && term !== raw && term.length >= 4 && !STOP.has(term) && !FILLER.has(term)) {
+    if (fuzzy(term, LEXICON_POOL, term.length >= 8 ? 2 : 1)) return true;
+  }
+  return false;
+}
+
+function lexiconHit(q) {
+  const text = normalize(q);
+  if (!text) return false;
+  if (LEXICON_PHRASES.some((phrase) => text.includes(phrase))) return true;
+  return text.split(" ").some((raw) => lexiconToken(raw));
+}
+
 function hasDomainTerm(text, domain, syn, pool, freq) {
   const parts = normalize(text).split(" ").filter((word) => word && word.length >= 2 && !STOP.has(word) && !FILLER.has(word));
   if (!parts.length) return false;
@@ -1045,6 +1088,7 @@ export function createRetriever(index) {
     const limited = String(raw || "").slice(0, 400);
     const routed = route(limited, host || {});
     if (!routed.searchText) return routed;
+    if (!lexiconHit(limited)) return fallbackAnswer([], routed.followMode, true);
     if (!hasDomainTerm(routed.searchText, domain, syn, pool, freq)) return fallbackAnswer([], routed.followMode, true);
     const seed = matchSeed(routed.searchText);
     if (seed) return fromSeed(seed, limited);
